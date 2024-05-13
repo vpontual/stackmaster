@@ -38,6 +38,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Choice from './pages/Choice';
 // import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -49,7 +50,7 @@ const App = () => {
         {/* <Route path="/quiz" element={<Quiz />} /> */}
         <Route path="/choice" element={<Choice />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
