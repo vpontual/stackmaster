@@ -38,7 +38,7 @@ import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Choice from './pages/Choice';
 import Categories from './pages/Categories';
-import Study from './components/Study';
+import Study from './pages/Study';
 import Footer from './components/Footer';
 
 const App = () => {
