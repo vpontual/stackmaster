@@ -1,22 +1,22 @@
 [
   {
-    "username": "Brian Kernighan",
+    "username": "vpontual",
     "email": "bkernighan@techfriends.dev",
-    "password": "password01"
+    "password": "password1234"
   },
   {
-    "username": "Max Kanat-Alexander",
-    "email": "mkanatalexander@techfriends.dev",
-    "password": "password02"
+    "username": "npahmed92",
+    "email": "npahmed92@gmail.com",
+    "password": "password1234"
   },
   {
-    "username": "Why The Lucky Stiff",
-    "email": "wtls@techfriends.dev",
-    "password": "password03"
+    "username": "wilbstewart7",
+    "email": "wilbstewart7@gmail.com",
+    "password": "password1234"
   },
   {
-    "username": "Kent Beck",
-    "email": "kbeck@techfriends.dev",
-    "password": "password04"
+    "username": "garybright1989",
+    "email": "garybright1989@gmail.com",
+    "password": "password1234"
   }
 ]
