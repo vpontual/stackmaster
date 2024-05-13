@@ -37,6 +37,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Choice from './pages/Choice';
+import Signup from './pages/Signup.jsx';
 // import Footer from './components/Footer';
 import Footer from './components/Footer';
 
@@ -48,6 +49,7 @@ const App = () => {
         {/* <Route path="/" element={<Home />} /> */}
         {/* <Route path="/study" element={<Study />} /> */}
         {/* <Route path="/quiz" element={<Quiz />} /> */}
+        <Route path="/signup" element={<Signup />} />
         <Route path="/choice" element={<Choice />} />
       </Routes>
       <Footer />
