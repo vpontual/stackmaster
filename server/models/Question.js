@@ -1,10 +1,7 @@
 const { Schema, model } = require('mongoose');
+const answerSchema = require('./Answers');
 
 const questionSchema = new Schema({
-  id: {
-    type: Schema.Types.ObjectId,
-    default: () => new Types.ObjectId(),
-  },
   lesson: {
     type: String,
   },
@@ -14,12 +11,7 @@ const questionSchema = new Schema({
   question: {
     typre: String,
   },
-  answers: [
-    {
-      type: Schema.Types.ObjectId,
-      ref: 'Answers',
-    },
-  ],
+  answers: [answerSchema],
   explanation: {
     type: String,
   },

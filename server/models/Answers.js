@@ -1,9 +1,12 @@
 const { Schema, model } = require('mongoose');
 
-const Schema = new Schema({
-  id: {
-    type: Schema.Types.ObjectId,
-    default: () => new Types.ObjectId(),
+const answerSchema = new Schema({
+  answerText: {
+    type: String,
   },
-  answerOne: {},
+  isCorrectAnswer: {
+    type: Boolean,
+  },
 });
+
+module.exports = answerSchema;
