@@ -11,11 +11,12 @@ const Navigation = ({ navLinkStyle, activeNavLinkStyle }) => {
           padding: 0,
           margin: 0,
           display: 'flex',
+          color: 'white',
         }}
       >
         <li className="nav-item" style={{ marginRight: '1rem' }}>
           <NavLink
-            to="/"
+            to="/study"
             end
             style={({ isActive }) =>
               isActive ? activeNavLinkStyle : navLinkStyle
@@ -26,7 +27,7 @@ const Navigation = ({ navLinkStyle, activeNavLinkStyle }) => {
         </li>
         <li className="nav-item" style={{ marginRight: '1rem' }}>
           <NavLink
-            to="/"
+            to="/quiz"
             end
             style={({ isActive }) =>
               isActive ? activeNavLinkStyle : navLinkStyle
