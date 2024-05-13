@@ -3,20 +3,15 @@ const { Schema, model } = require('mongoose');
 const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 const userSchema = new Schema({
-  _id: Schema.Types.ObjectId,
   username: {
     type: String,
     required: true,
     unique: true,
     trim: true,
   },
-  name: {
-    type: String,
-    required: true,
-    trim: true,
-  },
   email: {
     type: String,
+    unique: true,
     validate: {
       validator: function (v) {
         return emailRegex.test(v);
@@ -29,6 +24,6 @@ const userSchema = new Schema({
   },
 });
 
-const User = model('User', userSchema);
+const User = model('user', userSchema);
 
 module.exports = User;
