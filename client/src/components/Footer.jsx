@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from 'react-router-dom';
+
 
 const Footer = () => {
   const footerstyle = {
@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer style={footerstyle}>  
         <h4>
-         © StackMaster
+         Get your Stack on! © 2024 StackMaster
         </h4>
     </footer>
   );
