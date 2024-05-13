@@ -4,6 +4,10 @@ export default {
     './index.html',
    './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    colors: {
+      'banner': '#11111b',
+      'header': '#f9e2af'
+    },
     extend: {},
   },
   plugins: [],
