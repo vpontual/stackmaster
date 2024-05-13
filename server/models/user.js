@@ -13,13 +13,9 @@ const userSchema = new Schema({
     unique: true,
     trim: true,
   },
-  name: {
-    type: String,
-    required: true,
-    trim: true,
-  },
   email: {
     type: String,
+    unique: true,
     validate: {
       validator: function (v) {
         return emailRegex.test(v);

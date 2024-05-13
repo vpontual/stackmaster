@@ -14,7 +14,12 @@ const questionSchema = new Schema({
   question: {
     typre: String,
   },
-  answer: {},
+  answers: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: 'Answers',
+    },
+  ],
   explanation: {
     type: String,
   },
