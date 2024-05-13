@@ -36,6 +36,8 @@
 
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
+import Choice from './pages/Choice';
+// import Footer from './components/Footer';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -43,10 +45,10 @@ const App = () => {
     <div className="d-flex flex-column min-vh-100">
       <Header />
       <Routes>
-        {/* <Route path="/" element={<Home />} />
-        <Route path="/study" element={<Study />} />
-        <Route path="/quiz" element={<Quiz />} />
-        <Route path="/profile" element={<Profile />} /> */}
+        {/* <Route path="/" element={<Home />} /> */}
+        {/* <Route path="/study" element={<Study />} /> */}
+        {/* <Route path="/quiz" element={<Quiz />} /> */}
+        <Route path="/choice" element={<Choice />} />
       </Routes>
       <Footer />
     </div>
