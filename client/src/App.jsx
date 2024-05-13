@@ -36,7 +36,7 @@
 
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -48,7 +48,7 @@ const App = () => {
         <Route path="/quiz" element={<Quiz />} />
         <Route path="/profile" element={<Profile />} /> */}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
