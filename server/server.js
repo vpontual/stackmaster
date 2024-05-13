@@ -14,6 +14,7 @@ const server = new ApolloServer({
   resolvers,
 });
 
+// create new instance of apollo with graphql
 const startApolloServer = async () => {
   await server.start();
 
