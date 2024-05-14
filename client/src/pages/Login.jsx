@@ -94,6 +94,9 @@ export default function Login(props) {
                 onChange={handleChange}
               />
               {errors.password && <div className="text-red-500">{errors.password}</div>}
+              <button className="w-full py-2 bg-blue-500 text-white rounded-lg cursor-pointer mt-4" type="submit">
+                Submit
+              </button>
             </form>
           </div>
         </div>
