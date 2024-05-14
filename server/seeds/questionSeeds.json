@@ -51,7 +51,7 @@
       },
       {
         "answerText": "The logical operator && returns true if both expressions are true, while the logical operator || returns true if one expression or the other returns true.",
-        "isCorrectAnswer": false
+        "isCorrectAnswer": true
       },
       {
         "answerText": "The logical operator && returns true if both expressions are true, while the logical operator || returns false if one expression or the other returns true.",
