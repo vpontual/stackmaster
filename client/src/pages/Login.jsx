@@ -71,7 +71,20 @@ export default function Login(props) {
       <div className="w-full lg:w-10/12">
         <div className="bg-white shadow-md">
           <h4 className="bg-dark text-white py-2 px-4">Login</h4>
-          <div className="p-4">{/* add ternary operator here with data and then load choices with Link */}</div>
+          <div className="p-4">
+            {/* add ternary operator here with data and then load choices with Link */}
+            <form onSubmit={handleFormSubmit}>
+              <input
+                className="w-full py-2 px-4 mt-4 border rounded-lg"
+                id="nameInput"
+                placeholder="Enter username"
+                name="username"
+                type="text"
+                value={formState.username}
+                onChange={handleChange}
+              />
+            </form>
+          </div>
         </div>
       </div>
     </main>
