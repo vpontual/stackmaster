@@ -1,5 +1,5 @@
-const models = require('../models');
-const db = require('../config/connection');
+const models = require('../models')
+const db = require('../config/connection')
 
 module.exports = async (modelName, collectionName) => {
   try {
@@ -7,12 +7,12 @@ module.exports = async (modelName, collectionName) => {
       .listCollections({
         name: collectionName,
       })
-      .toArray();
+      .toArray()
 
     if (modelExists.length) {
-      await db.dropCollection(collectionName);
+      await db.dropCollection(collectionName)
     }
   } catch (err) {
-    throw err;
+    throw err
   }
-};
+}

@@ -2,7 +2,6 @@ import Navigation from './Nav';
 
 // Setting inline styles for the header element
 const Header = () => {
-  
   // Setting inline styles for the nav links
   const navLinkStyle = {
     textDecoration: 'none',
@@ -18,7 +17,7 @@ const Header = () => {
   };
   // Return the header element with the h1 element and the Navigation component
   return (
-    <header className="display-flex justify-between items-center bg-banner text-header p-4">
+    <header className="flex justify-between items-center bg-banner text-header p-4">
       <h1 className="m-0 text-4xl">StackMaster</h1>
       <Navigation
         navLinkStyle={navLinkStyle}
