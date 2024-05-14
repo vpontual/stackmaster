@@ -83,6 +83,7 @@ export default function Login(props) {
                 value={formState.username}
                 onChange={handleChange}
               />
+              {errors.username && <div className="text-red-500">{errors.username}</div>}
             </form>
           </div>
         </div>
