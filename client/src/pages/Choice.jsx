@@ -4,10 +4,14 @@ import { Link } from 'react-router-dom';
 const Choice = () => {
   return (
     <div>
-      <h1>What do you want to do today?</h1>
-      <div>
+      <h1 className="flex justify-center pb-10">What do you want to do today?</h1>
+      <div className="flex justify-center justify-evenly pt-20">
+        <div className="">
         <Link to="/categories">Study</Link>
+        </div>
+        <div>
         <Link to="/quiz">Take Quiz</Link>
+        </div>
       </div>
     </div>
   );
