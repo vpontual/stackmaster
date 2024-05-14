@@ -17,5 +17,16 @@ export default function Login(props) {
     password: '',
   })
 
+  // use mutation here to add user
+
+  const handleChange = event => {
+    const { name, value } = event.target
+
+    setFormState({ ...formState, [name]: value })
+
+    // reset error when user types
+    setErrors({ ...errors, [name]: '' })
+  }
+
   return <div>Hello</div>
 }
