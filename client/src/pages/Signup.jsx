@@ -8,6 +8,12 @@ export default function Signup () {
     password: '',
   });
 
+  const [errors, setErrors] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
   // use mutation here to add user
 
   const handleChange = (event) => {
