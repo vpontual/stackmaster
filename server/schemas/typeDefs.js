@@ -5,13 +5,13 @@ const typeDefs = `
     }
     
     type Question {
-        _id: ID!
-        lesson: String!
-        category: String!
-        question: String!
-        answers: [Answer]!
-        expanation: String!
-        point: Number!
+    _id: ID!
+    lesson: String!
+    category: String!
+    question: String!
+    answers: [Answer]!
+    expanation: String!
+    point: Number!
     }
 
     type Query {
@@ -22,10 +22,9 @@ const typeDefs = `
         questions(category: String!): [Question]
     }
 
-    type Mutation {
+      type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String!): Auth
-    }
 
     `
 

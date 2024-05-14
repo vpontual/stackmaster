@@ -1,0 +1,74 @@
+[
+  {
+    "lesson": "3",
+    "category": "JavaScript",
+    "question": "Where do you place your JavaScript code inside the HTML document?",
+    "explanation": "JavaScript is placed inside the <script> element of the HTML document.",
+    "answers": [
+      { "answerText": "Inside the <head> element", "isCorrectAnswer": false },
+      { "answerText": "In the <footer> element", "isCorrectAnswer": false },
+      { "answerText": "Inside the <link> element", "isCorrectAnswer": false },
+      { "answerText": "Inside the <script> element", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "3",
+    "category": "JavaScript",
+    "question": "Which operator is used to assign a value to a declared variable?",
+    "explanation": " The correct way to assign a variable is with an equal sign(=).",
+    "answers": [
+      { "answerText": "Question mark (?)", "isCorrectAnswer": false },
+      { "answerText": "Colon (:)", "isCorrectAnswer": false },
+      { "answerText": "Equal sign (=)", "isCorrectAnswer": true },
+      { "answerText": "D - Double-equal (==)", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "3",
+    "category": "JavaScript",
+    "question": "What are the seven primitive data types in JavaScript?",
+    "explanation": "string, number, boolean, bigint, symbol, undefined, null",
+    "answers": [
+      { "answerText": "string, num, falsy, bigint, symbol, undefined, null", "isCorrectAnswer": false },
+      { "answerText": "string, number, boolean, bigint, symbol, undefined, null", "isCorrectAnswer": true },
+      { "answerText": "sentence, float, data, bigint, symbol, undefined, null", "isCorrectAnswer": false },
+      { "answerText": "sentence, int, truthy, bigint, symbol, undefined, null", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "3",
+    "category": "JavaScript",
+    "question": "What is the difference between && and ||?",
+    "explanation": "The logical operator && returns true if both expressions are true, while the logical operator || returns true if one expression or the other returns true.",
+    "answers": [
+      {
+        "answerText": "The logical operator && returns true if none of the expressions are true, while the logical operator || returns true if one expression or the other returns true",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "The logical operator && returns true if one expression is true, while the logical operator || returns true if both expressions return true.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "The logical operator && returns true if both expressions are true, while the logical operator || returns true if one expression or the other returns true.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "The logical operator && returns true if both expressions are true, while the logical operator || returns false if one expression or the other returns true.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "3",
+    "category": "JavaScript",
+    "question": "What is the index of the letter 'b' in the following array? ['a', 'b', 'c', 'd']",
+    "explanation": "Arrays are zero-indexed, meaning that the first index is always 0. That means 'b' would be at index 1.",
+    "answers": [
+      { "answerText": "1", "isCorrectAnswer": true },
+      { "answerText": "2", "isCorrectAnswer": false },
+      { "answerText": "3", "isCorrectAnswer": false },
+      { "answerText": "4", "isCorrectAnswer": false }
+    ]
+  }
+]
