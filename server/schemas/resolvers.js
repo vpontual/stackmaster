@@ -13,6 +13,23 @@ const resolvers = {
       const token = signToken(user);
       return { token, user };
     },
+    login: async (parent, { username, password }) => {
+      const user = await User.findOne({ username });
+
+      if (!user) {
+        throw AuthenticationError;
+      }
+
+      const correctPW = await user.isCorrectPassword(password);
+
+      if (!correctPW) {
+        throw AuthenticationError;
+      }
+
+      const token = signToken(user);
+
+      return { token, user };
+    },
   },
 };
 
