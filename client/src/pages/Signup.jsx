@@ -1,12 +1,15 @@
 import { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-// import useMatation from apollo here
-// import mutuation from utils here
+// import useMutation from apollo here
+import { useMutation } from '@apollo/client';
+// import mutation from utils here
+import { ADD_USER } from '../utils/mutations';
 
 // import authentication here
+import Auth from '../utils/auth';
 
-export default function SignUp() {
+export default function Signup() {
   const [formState, setFormState] = useState({
     username: '',
     email: '',
@@ -20,6 +23,7 @@ export default function SignUp() {
   });
 
   // use mutation here to add user
+  const [addUser, { data }] = useMutation(ADD_USER);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -30,7 +34,7 @@ export default function SignUp() {
     setErrors({ ...errors, [name]: '' });
   };
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);
     let valid = true;
@@ -51,11 +55,7 @@ export default function SignUp() {
         email: 'Email is required',
       }));
       valid = false;
-    } else if (
-      !/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/.test(
-        formState.email.trim()
-      )
-    ) {
+    } else if (!/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/.test(formState.email.trim())) {
       setErrors((prevErrors) => ({
         ...prevErrors,
         email: 'Invalid email format',
@@ -70,9 +70,7 @@ export default function SignUp() {
         password: 'Password is required',
       }));
       valid = false;
-    } else if (
-      !/(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}/.test(formState.password)
-    ) {
+    } else if (!/(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}/.test(formState.password)) {
       // validate password format
       setErrors((prevErrors) => ({
         ...prevErrors,
@@ -95,6 +93,14 @@ export default function SignUp() {
     }
 
     // add try catch error for add user and authenticate login
+    try {
+      const { data } = await addUser({
+        variables: { ...formState },
+      });
+      Auth.login(data.addUser.token);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -104,51 +110,49 @@ export default function SignUp() {
           <h4 className="bg-dark text-white py-2 px-4">Sign Up</h4>
           <div className="p-4">
             {/* add ternary operator here with data and then load choices with Link */}
-            <form onSubmit={handleFormSubmit}>
-              <input
-                className="w-full py-2 px-4 mt-4 border rounded-lg"
-                id="nameInput"
-                placeholder="Enter username"
-                name="username"
-                type="text"
-                value={formState.username}
-                onChange={handleChange}
-              />
-              {errors.username && (
-                <div className="text-red-500">{errors.username}</div>
-              )}
-              <input
-                className="w-full py-2 px-4 mt-4 border rounded-lg"
-                id="emailInput"
-                placeholder="Enter email"
-                name="email"
-                type="text"
-                value={formState.email}
-                onChange={handleChange}
-              />
-              {errors.email && (
-                <div className="text-red-500">{errors.email}</div>
-              )}
-              <input
-                className="w-full py-2 px-4 mt-4 border rounded-lg"
-                id="passwordInput"
-                placeholder="******"
-                name="password"
-                type="password"
-                value={formState.password}
-                onChange={handleChange}
-              />
-              {errors.password && (
-                <div className="text-red-500">{errors.password}</div>
-              )}
-              <button
-                className="w-full py-2 bg-blue-500 text-white rounded-lg cursor-pointer mt-4"
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
+            {data ? (
+              <p>
+                Success! You may now head <Link to="/choice">back to the homepage.</Link>
+              </p>
+            ) : (
+              <form onSubmit={handleFormSubmit}>
+                <input
+                  className="w-full py-2 px-4 mt-4 border rounded-lg"
+                  id="nameInput"
+                  placeholder="Enter username"
+                  name="username"
+                  type="text"
+                  value={formState.username}
+                  onChange={handleChange}
+                />
+                {errors.username && <div className="text-red-500">{errors.username}</div>}
+                <input
+                  className="w-full py-2 px-4 mt-4 border rounded-lg"
+                  id="emailInput"
+                  placeholder="Enter email"
+                  name="email"
+                  type="text"
+                  value={formState.email}
+                  onChange={handleChange}
+                />
+                {errors.email && <div className="text-red-500">{errors.email}</div>}
+                <input
+                  className="w-full py-2 px-4 mt-4 border rounded-lg"
+                  id="passwordInput"
+                  placeholder="******"
+                  name="password"
+                  type="password"
+                  value={formState.password}
+                  onChange={handleChange}
+                />
+                {errors.password && <div className="text-red-500">{errors.password}</div>}
+                <button className="w-full py-2 bg-blue-500 text-white rounded-lg cursor-pointer mt-4" type="submit">
+                  Submit
+                </button>
+              </form>
+            )}
             {/* add error message here */}
+            {/* {error && <div className="my-3 p-3 bg-danger text-white">{error.message}</div>} */}
           </div>
         </div>
       </div>
