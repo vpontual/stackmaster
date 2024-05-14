@@ -66,5 +66,14 @@ export default function Login(props) {
     }
   }
 
-  return <div>Hello</div>
+  return (
+    <main className="flex justify-center mb-4">
+      <div className="w-full lg:w-10/12">
+        <div className="bg-white shadow-md">
+          <h4 className="bg-dark text-white py-2 px-4">Login</h4>
+          <div className="p-4">{/* add ternary operator here with data and then load choices with Link */}</div>
+        </div>
+      </div>
+    </main>
+  )
 }
