@@ -67,6 +67,37 @@ export default function Signup() {
       valid = false;
     }
 
+    if (!formState.password.trim()) {
+      // validate password field
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        password: 'Password is required',
+      }));
+      valid = false;
+    } else if (
+      !/(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}/.test(formState.password)
+    ) {
+      // validate password format
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        password:
+          'Password must contain at least 1 uppercase letter, 1 lowercase letter, and be at least 8 characters long',
+      }));
+      valid = false;
+    }
+
+    // valid form
+    if (valid) {
+      console.log('Form submitted:', formState);
+
+      // reset form after submission
+      setFormState({
+        username: '',
+        email: '',
+        password: '',
+      });
+    }
+
     // add try catch error for add user and authenticate login
   };
 
