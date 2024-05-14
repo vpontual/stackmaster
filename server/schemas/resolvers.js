@@ -12,7 +12,15 @@ const resolvers = {
     questions: async () => {
       return Question.find();
     },
-    questionsCategory: async (parent, {}) => {},
+    questionsCategory: async (parent, { category }) => {
+      return Question.find({ category });
+    },
+    me: async (parent, args, context) => {
+      if (context.user) {
+        return User.findOne({ _id: context.user._id });
+      }
+      throw AuthenticationError;
+    },
   },
   Mutation: {
     addUser: async (parent, { username, email, password }) => {
