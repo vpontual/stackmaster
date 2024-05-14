@@ -1,5 +1,5 @@
-const { Schema, model } = require('mongoose');
-const answerSchema = require('./Answers');
+const { Schema, model } = require('mongoose')
+const answerSchema = require('./Answers')
 
 const questionSchema = new Schema({
   lesson: {
@@ -9,7 +9,7 @@ const questionSchema = new Schema({
     type: String,
   },
   question: {
-    typre: String,
+    type: String,
   },
   answers: [answerSchema],
   explanation: {
@@ -18,8 +18,8 @@ const questionSchema = new Schema({
   point: {
     type: Number,
   },
-});
+})
 
-const Question = model('question', questionSchema);
+const Question = model('question', questionSchema)
 
-module.exports = Question;
+module.exports = Question
