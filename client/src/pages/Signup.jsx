@@ -37,6 +37,14 @@ export default function Signup() {
     event.preventDefault();
     console.log(formState);
 
+    let valid = true;
+
+    // validate name field
+    if (!formState.name.trim()) {
+      setErrors((prevErrors) => ({ ...prevErrors, name: 'Name is required' }));
+      valid = false;
+    }
+
     // add try catch error for add user and authenticate login
   };
 
