@@ -28,5 +28,43 @@ export default function Login(props) {
     setErrors({ ...errors, [name]: '' })
   }
 
+  const handleFormSubmit = event => {
+    event.preventDefault()
+    console.log(formState)
+    let valid = true
+
+    // validate username field
+    if (!formState.username.trim()) {
+      setErrors(prevErrors => ({
+        ...prevErrors,
+        username: 'Username is required',
+      }))
+      valid = false
+    }
+
+    // validate password format
+    if (!formState.password.trim()) {
+      // validate password field
+      setErrors(prevErrors => ({
+        ...prevErrors,
+        password: 'Password is required',
+      }))
+      valid = false
+    }
+
+    // add try catch error for add user and authenticate login
+
+    // valid form
+    if (valid) {
+      console.log('Form submitted:', formState)
+
+      // reset form after login
+      setFormState({
+        username: '',
+        password: '',
+      })
+    }
+  }
+
   return <div>Hello</div>
 }
