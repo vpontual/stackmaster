@@ -14,23 +14,23 @@ export default function Signup() {
   });
 
   const [errors, setErrors] = useState({
-    name: '',
+    username: '',
     email: '',
-    message: '',
+    password: '',
   });
 
   // use mutation here to add user
 
   const handleChange = (event) => {
-    const { name, value } = event.target;
+    const { username, value } = event.target;
 
     setFormState({
       ...formState,
-      [name]: value,
+      [username]: value,
     });
 
     // reset error when user types
-    setErrors({ ...errors, [name]: '' });
+    setErrors({ ...errors, [username]: '' });
   };
 
   const handleFormSubmit = async (event) => {
@@ -39,9 +39,12 @@ export default function Signup() {
 
     let valid = true;
 
-    // validate name field
-    if (!formState.name.trim()) {
-      setErrors((prevErrors) => ({ ...prevErrors, name: 'Name is required' }));
+    // validate username field
+    if (!formState.username.trim()) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        username: 'Username is required',
+      }));
       valid = false;
     }
 
