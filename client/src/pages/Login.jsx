@@ -93,6 +93,7 @@ export default function Login(props) {
                 value={formState.password}
                 onChange={handleChange}
               />
+              {errors.password && <div className="text-red-500">{errors.password}</div>}
             </form>
           </div>
         </div>
