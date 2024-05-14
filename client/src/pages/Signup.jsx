@@ -45,6 +45,25 @@ export default function Signup() {
       valid = false;
     }
 
+    // validate email field
+    if (!formState.email.trim()) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        email: 'Email is required',
+      }));
+      valid = false;
+    } else if (
+      !/^([a-z0-9_.-]+)@([\da-z.-]+)\.([a-z.]{2,6})$/.test(
+        formState.email.trim()
+      )
+    ) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        email: 'Invalid email format',
+      }));
+      valid = false;
+    }
+
     // add try catch error for add user and authenticate login
   };
 
