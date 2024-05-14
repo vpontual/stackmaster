@@ -1,7 +1,12 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-export default function Signup () {
+// import useMatation from apollo here
+// import mutuation from utils here
+
+// import authentication here
+
+export default function Signup() {
   const [formState, setFormState] = useState({
     username: '',
     email: '',
@@ -23,16 +28,17 @@ export default function Signup () {
       ...formState,
       [name]: value,
     });
+
+    // reset error when user types
+    setErrors({ ...errors, [name]: '' });
   };
 
-const handleFormSubmit = async (event) => {
-  event.preventDefault();
-  console.log(formState);
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    console.log(formState);
 
-  // add try catch error for add user and authenticate login
-}
+    // add try catch error for add user and authenticate login
+  };
 
-  return (
-
-  )
+  return <div>hello</div>;
 }
