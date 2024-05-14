@@ -101,5 +101,49 @@ export default function Signup() {
     // add try catch error for add user and authenticate login
   };
 
-  return <div>hello</div>;
+  return (
+    <main className="flex justify-center mb-4">
+      <div className="w-full lg:w-10/12">
+        <div className="bg-white shadow-md">
+          <h4 className="bg-dark text-white py-2 px-4">Sign Up</h4>
+          <div className="p-4">
+            {/* add ternary operator here with data and then load choices with Link */}
+            <form onSubmit={handleFormSubmit}>
+              <input
+                className="w-full py-2 px-4 mb-4 border rounded-lg"
+                placeholder="Enter username"
+                name="username"
+                type="text"
+                value={formState.username}
+                onChange={handleChange}
+              />
+              <input
+                className="w-full py-2 px-4 mb-4 border rounded-lg"
+                placeholder="Enter email"
+                name="email"
+                type="email"
+                value={formState.email}
+                onChange={handleChange}
+              />
+              <input
+                className="w-full py-2 px-4 mb-4 border rounded-lg"
+                placeholder="******"
+                name="password"
+                type="password"
+                value={formState.password}
+                onChange={handleChange}
+              />
+              <button
+                className="w-full py-2 bg-blue-500 text-white rounded-lg cursor-pointer"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+            {/* add error message here */}
+          </div>
+        </div>
+      </div>
+    </main>
+  );
 }
