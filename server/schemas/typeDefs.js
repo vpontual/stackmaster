@@ -34,11 +34,11 @@ const typeDefs = `
         questionsCategory(category: String!): [Question]
     }
 
-    type Mutation {
+      type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(username: String!, password: String!): Auth
     }
-
+    
     `
 
 module.exports = typeDefs
