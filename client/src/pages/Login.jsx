@@ -84,6 +84,15 @@ export default function Login(props) {
                 onChange={handleChange}
               />
               {errors.username && <div className="text-red-500">{errors.username}</div>}
+              <input
+                className="w-full py-2 px-4 mt-4 border rounded-lg"
+                id="passwordInput"
+                placeholder="******"
+                name="password"
+                type="password"
+                value={formState.password}
+                onChange={handleChange}
+              />
             </form>
           </div>
         </div>
