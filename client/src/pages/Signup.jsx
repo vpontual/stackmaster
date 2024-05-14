@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 // import authentication here
 
-export default function Signup() {
+export default function SignUp() {
   const [formState, setFormState] = useState({
     username: '',
     email: '',
@@ -22,21 +22,17 @@ export default function Signup() {
   // use mutation here to add user
 
   const handleChange = (event) => {
-    const { username, value } = event.target;
+    const { name, value } = event.target;
 
-    setFormState({
-      ...formState,
-      [username]: value,
-    });
+    setFormState({ ...formState, [name]: value });
 
     // reset error when user types
-    setErrors({ ...errors, [username]: '' });
+    setErrors({ ...errors, [name]: '' });
   };
 
-  const handleFormSubmit = async (event) => {
+  const handleFormSubmit = (event) => {
     event.preventDefault();
     console.log(formState);
-
     let valid = true;
 
     // validate username field
@@ -110,31 +106,43 @@ export default function Signup() {
             {/* add ternary operator here with data and then load choices with Link */}
             <form onSubmit={handleFormSubmit}>
               <input
-                className="w-full py-2 px-4 mb-4 border rounded-lg"
+                className="w-full py-2 px-4 mt-4 border rounded-lg"
+                id="nameInput"
                 placeholder="Enter username"
                 name="username"
                 type="text"
                 value={formState.username}
                 onChange={handleChange}
               />
+              {errors.username && (
+                <div className="text-red-500">{errors.username}</div>
+              )}
               <input
-                className="w-full py-2 px-4 mb-4 border rounded-lg"
+                className="w-full py-2 px-4 mt-4 border rounded-lg"
+                id="emailInput"
                 placeholder="Enter email"
                 name="email"
-                type="email"
+                type="text"
                 value={formState.email}
                 onChange={handleChange}
               />
+              {errors.email && (
+                <div className="text-red-500">{errors.email}</div>
+              )}
               <input
-                className="w-full py-2 px-4 mb-4 border rounded-lg"
+                className="w-full py-2 px-4 mt-4 border rounded-lg"
+                id="passwordInput"
                 placeholder="******"
                 name="password"
                 type="password"
                 value={formState.password}
                 onChange={handleChange}
               />
+              {errors.password && (
+                <div className="text-red-500">{errors.password}</div>
+              )}
               <button
-                className="w-full py-2 bg-blue-500 text-white rounded-lg cursor-pointer"
+                className="w-full py-2 bg-blue-500 text-white rounded-lg cursor-pointer mt-4"
                 type="submit"
               >
                 Submit
