@@ -98,6 +98,7 @@ export default function Login(props) {
                 Submit
               </button>
             </form>
+            {/* add error message here */}
           </div>
         </div>
       </div>
