@@ -1,4 +1,4 @@
-const { Answer, Question, User } = require('../models');
+const { Question, User } = require('../models');
 const { signToken, AuthenticationError } = require('../utils/auth');
 
 const resolvers = {
@@ -9,6 +9,10 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username });
     },
+    questions: async () => {
+      return Question.find();
+    },
+    questionsCategory: async (parent, {}) => {},
   },
   Mutation: {
     addUser: async (parent, { username, email, password }) => {
