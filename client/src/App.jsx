@@ -34,12 +34,13 @@
 
 // export default App
 
-import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Choice from './pages/Choice';
-import Categories from './pages/Categories';
-import Study from './pages/Study';
-import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Choice from './pages/Choice'
+import Login from './pages/Login.jsx'
+import Categories from './pages/Categories'
+import Study from './pages/Study'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -47,6 +48,7 @@ const App = () => {
       <Header />
       <Routes>
         {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/login" element={<Login />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/study" element={<Study />} />
         {/* <Route path="/quiz" element={<Quiz />} /> */}
@@ -54,7 +56,7 @@ const App = () => {
       </Routes>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App
