@@ -1,5 +1,104 @@
 [
   {
+    "lesson": "1",
+    "category": "HTML-CSS",
+    "question": "What is the purpose of the alt attribute for images?",
+    "explanation": "The alt tag is what a text description of the image. This is particularly useful for users who rely on a screen reader.",
+    "answers": [
+      { "answerText": "To prevent search engines from indexing the image.", "isCorrectAnswer": false },
+      { "answerText": "To make it easier to style the image with CSS.", "isCorrectAnswer": false },
+      { "answerText": "To make the image load faster. ", "isCorrectAnswer": false },
+      {
+        "answerText": "To provide context for the images in the cases where they are not observable, either due to an accessibility challenge or a broken link.",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "1",
+    "category": "HTML-CSS",
+    "question": "What is an HTML semantic element?",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "Semantic elements, like <div>, hold the important content together so it's easy to understand.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "A semantic element clearly describes its meaning to both the browser and the developer.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A semantic element reveals nothing about its content to the browser or the developer.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "Semantic elements are outdated and are no longer used in HTML.", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "1",
+    "category": "HTML-CSS",
+    "question": "Given the following CSS selector, which HTML element would be the outermost/parent element? header nav ul li {color: white;}",
+    "explanation": "Header is the outermost element making it the parent. All other elements are contained within the header making them the children.",
+    "answers": [
+      { "answerText": "<header>", "isCorrectAnswer": true },
+      { "answerText": "<nav>", "isCorrectAnswer": false },
+      { "answerText": "<ul>", "isCorrectAnswer": false },
+      { "answerText": "<li>", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "1",
+    "category": "HTML-CSS",
+    "question": "Which of the following is not a component of the box model?",
+    "explanation": "The components of a box model are margin border padding and the content.",
+    "answers": [
+      { "answerText": "border", "isCorrectAnswer": false },
+      { "answerText": "padding", "isCorrectAnswer": false },
+      { "answerText": "display", "isCorrectAnswer": true },
+      { "answerText": "the content", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "1",
+    "category": "HTML-CSS",
+    "question": "When linking a CSS file to an HTML file, where does the link go?",
+    "explanation": "The link to the CSS file would be placed in the <head> element.",
+    "answers": [
+      { "answerText": "<head>", "isCorrectAnswer": true },
+      { "answerText": "<header>", "isCorrectAnswer": false },
+      { "answerText": "<body>", "isCorrectAnswer": false },
+      { "answerText": "<section>", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "2",
+    "category": "Advanced-CSS",
+    "question": "Which of the following is a true statement about pseudo-elements and pseudo-classes?",
+    "explanation": "Pseudo-elements also differ from pseudo-classes in that they act as if you had added a whole new HTML element into the markup instead of applying a class to existing elements.",
+    "answers": [
+      { "answerText": "Pseudo-elements and pseudo-classes are actually the same thing", "isCorrectAnswer": false },
+      {
+        "answerText": "Pseudo-elements start with a double colon (::) and pseudo-classes start with a single colon (:)",
+        "isCorrectAnswer": true
+      },
+      { "answerText": "::before is both a pseudo-element and a pseudo-class", "isCorrectAnswer": false },
+      { "answerText": "Pseudo-elements and pseudo-classes cannot be combined", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "2",
+    "category": "Advanced-CSS",
+    "question": "How do you declare a custom property or CSS variable?",
+    "explanation": "",
+    "answers": [
+      { "answerText": "var root-my-color = green", "isCorrectAnswer": false },
+      { "answerText": ":root { --my-color: green; }", "isCorrectAnswer": true },
+      { "answerText": "var my-color = green", "isCorrectAnswer": false },
+      { "answerText": ":root { var my-color = green }", "isCorrectAnswer": false }
+    ]
+  },
+  {
     "lesson": "3",
     "category": "JavaScript",
     "question": "Where do you place your JavaScript code inside the HTML document?",
@@ -69,6 +168,75 @@
       { "answerText": "2", "isCorrectAnswer": false },
       { "answerText": "3", "isCorrectAnswer": false },
       { "answerText": "4", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "4",
+    "category": "Web APIs",
+    "question": "Which value would we add to setInterval() if we want a function called myTimer() to run every 3 seconds?",
+    "explanation": "Interval is always entered in milliseconds.",
+    "answers": [
+      { "answerText": "setInterval(myTimer, 300)", "isCorrectAnswer": false },
+      { "answerText": "setInterval(myTimer, 3)", "isCorrectAnswer": false },
+      { "answerText": "setInterval(myTimer, 30)", "isCorrectAnswer": false },
+      { "answerText": "setInterval(myTimer, 3000)", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "4",
+    "category": "Web APIs",
+    "question": "Which event property can you use in order to implement event delegation? ",
+    "explanation": "We can use event.target to implement event delegation on a parent element and check for events on child elements that bubble up to the parent element. This allows us to handle events for multiple child elements without creating event handlers for each of the elements.",
+    "answers": [
+      { "answerText": "event.preventDefault()", "isCorrectAnswer": false },
+      { "answerText": "event.stopPropagation()", "isCorrectAnswer": false },
+      { "answerText": "event.target", "isCorrectAnswer": true },
+      { "answerText": "event.addEventListener", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "4",
+    "category": "Web APIs",
+    "question": "Which statement best describes what is happening to data when it is persisted to local storage?",
+    "explanation": "When data is persisted to local storage, it is stored in the client, or browser.",
+    "answers": [
+      { "answerText": "The data is stored in Chrome Dev Tools.", "isCorrectAnswer": false },
+      { "answerText": "The data is stored in the database in the back end.", "isCorrectAnswer": false },
+      { "answerText": "The data is stored in a window called localStorage.", "isCorrectAnswer": false },
+      { "answerText": "The data is stored in the client, or browser.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "4",
+    "category": "Web APIs",
+    "question": "You need to retrieve data with the key name of 'formData' from local storage and convert it into an object. How would you accomplish this?",
+    "explanation": "We converted formData to a JSON string in order to store it, and now we need to parse it in order to convert it back into an object.",
+    "answers": [
+      { "answerText": "const formData = JSON.parse(localStorage.getItem('formData'));", "isCorrectAnswer": true },
+      { "answerText": "const formData = JSON.parse(localStorage.setItem('formData'));", "isCorrectAnswer": false },
+      { "answerText": "const formData = JSON.parse('formData');", "isCorrectAnswer": false },
+      { "answerText": "const formData = JSON.stringify(localStorage.getItem('formData'));", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "4",
+    "category": "Web APIs",
+    "question": "Why do we need to convert an object into JSON in order for it to properly persist to local storage?",
+    "explanation": "We convert an object to a string using JSON because local storage can only store strings.",
+    "answers": [
+      { "answerText": "Local storage only accepts JSON objects. ", "isCorrectAnswer": true },
+      {
+        "answerText": "Local storage can only store strings, so we convert the object to a JSON string to store it properly.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Local storage cannot read JavaScript, so we convert JavaScript into JSON.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "It is convention to store objects using JSON, and we must follow that pattern so that our code is easy to read.",
+        "isCorrectAnswer": false
+      }
     ]
   }
 ]

@@ -13,7 +13,6 @@ const typeDefs = `
         question: String!
         answers: [Answers]!
         explanation: String!
-        point: Int!
     }
 
     type Answers {
@@ -38,7 +37,6 @@ const typeDefs = `
         addUser(username: String!, email: String!, password: String!): Auth
         login(username: String!, password: String!): Auth
     }
-    
-    `
+    `;
 
-module.exports = typeDefs
+module.exports = typeDefs;
