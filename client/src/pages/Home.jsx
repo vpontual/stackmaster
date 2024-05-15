@@ -3,58 +3,27 @@ import { useSprings, animated, interpolate } from '@react-spring/web';
 import { useDrag } from 'react-use-gesture';
 import styles from '../styles.module.css';
 import { useParams } from 'react-router-dom';
-import card from '../assets/card.svg';
+import card from '../assets/cardVert.svg';
 
-const cards = [
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-  card,
-];
+const cards = [card, card, card, card, card, card, card, card, card, card, card, card, card, card, card, card];
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({
-  x: 400,
-  y: 200,
+  x: 10,
+  y: 400,
   scale: 1,
-  rot: -10 + Math.random() * 20,
+  rot: -10 + Math.random() * 60,
   delay: i * 100,
 });
-const from = () => ({ x: 0, rot: 0, scale: 1.5, y: -1000 });
+const from = () => ({
+  x: 0,
+  rot: 0,
+  scale: 1.5,
+  y: -1000,
+});
 
 // This is being used down there in the view, it interpolates rotation and scale into a css transform
-const trans = (r, s) => `perspective(1500px) rotateX(30deg) rotateY(${r / 5}deg) rotateZ(90deg) scale(${s})`;
+const trans = (r, s) => `perspective(1500px) rotateX(30deg) rotateY(${r / 8}deg) rotateZ(90deg) scale(${s})`;
 
 function Deck() {
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
@@ -98,6 +67,7 @@ function Deck() {
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return (
     <>
+      <h1 className="mt-40">Welcome To Stack Master!</h1>
       {props.map(({ x, y, rot, scale }, i) => (
         <animated.div className={styles.deck} key={i} style={{ x, y }}>
           {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
