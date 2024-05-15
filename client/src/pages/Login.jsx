@@ -1,14 +1,11 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
-// import useMutation from apollo here
 import { useMutation } from '@apollo/client';
-// import mutation from utils here
 import { LOGIN_USER } from '../utils/mutations';
-// import authentication here
 import Auth from '../utils/auth';
 
-export default function Login(props) {
+export default function Login() {
   const [formState, setFormState] = useState({
     username: '',
     password: '',
@@ -19,7 +16,7 @@ export default function Login(props) {
     password: '',
   });
 
-  const [login, { error, data }] = useMutation(LOGIN_USER);
+  const [login, { data }] = useMutation(LOGIN_USER);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -52,15 +49,15 @@ export default function Login(props) {
       valid = false;
     }
 
-    // add try catch error for add user and authenticate login
     try {
       const { data } = await login({
         variables: { ...formState },
       });
+      console.log('login data', data);
 
       Auth.login(data.login.token);
-    } catch (e) {
-      console.error(e);
+    } catch (event) {
+      console.error(event);
     }
 
     // valid form
@@ -75,15 +72,19 @@ export default function Login(props) {
     }
   };
 
+  // If user is logged in, redirect to choice page
+  if (Auth.loggedIn()) {
+    return <Navigate to="/choice" />;
+  }
+
   return (
     <main className="flex justify-center mb-4">
       <div className="w-full lg:w-10/12">
         <div>
-          <h4 className="bg-dark text-white py-2 px-4">Login</h4>
           <div className="p-4">
             {data ? (
               <p>
-                Success! You may now head <Link to="/choice">back to the homepage.</Link>
+                <Navigate to="/choice" />
               </p>
             ) : (
               <form onSubmit={handleFormSubmit}>
@@ -108,11 +109,10 @@ export default function Login(props) {
                 />
                 {errors.password && <div className="text-red-500">{errors.password}</div>}
                 <button className="w-full py-2 text-white rounded-lg cursor-pointer mt-4" type="submit">
-                  Submit
+                  Login
                 </button>
               </form>
             )}
-            {/* add error message here */}
           </div>
         </div>
       </div>
