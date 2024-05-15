@@ -81,32 +81,37 @@ export default function Login(props) {
         <div>
           <h4 className="bg-dark text-white py-2 px-4">Login</h4>
           <div className="p-4">
-            {/* add ternary operator here with data and then load choices with Link */}
-            <form onSubmit={handleFormSubmit}>
-              <input
-                className="w-full py-2 px-4 mt-4 border rounded-lg"
-                id="nameInput"
-                placeholder="Enter username"
-                name="username"
-                type="text"
-                value={formState.username}
-                onChange={handleChange}
-              />
-              {errors.username && <div className="text-red-500">{errors.username}</div>}
-              <input
-                className="w-full py-2 px-4 mt-4 border rounded-lg"
-                id="passwordInput"
-                placeholder="******"
-                name="password"
-                type="password"
-                value={formState.password}
-                onChange={handleChange}
-              />
-              {errors.password && <div className="text-red-500">{errors.password}</div>}
-              <button className="w-full py-2 text-white rounded-lg cursor-pointer mt-4" type="submit">
-                Submit
-              </button>
-            </form>
+            {data ? (
+              <p>
+                Success! You may now head <Link to="/choice">back to the homepage.</Link>
+              </p>
+            ) : (
+              <form onSubmit={handleFormSubmit}>
+                <input
+                  className="w-full py-2 px-4 mt-4 border rounded-lg"
+                  id="nameInput"
+                  placeholder="Enter username"
+                  name="username"
+                  type="text"
+                  value={formState.username}
+                  onChange={handleChange}
+                />
+                {errors.username && <div className="text-red-500">{errors.username}</div>}
+                <input
+                  className="w-full py-2 px-4 mt-4 border rounded-lg"
+                  id="passwordInput"
+                  placeholder="******"
+                  name="password"
+                  type="password"
+                  value={formState.password}
+                  onChange={handleChange}
+                />
+                {errors.password && <div className="text-red-500">{errors.password}</div>}
+                <button className="w-full py-2 text-white rounded-lg cursor-pointer mt-4" type="submit">
+                  Submit
+                </button>
+              </form>
+            )}
             {/* add error message here */}
           </div>
         </div>
