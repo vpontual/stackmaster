@@ -752,13 +752,16 @@
   {
     "lesson": "12",
     "category": "Databases",
-    "question": "",
-    "explanation": "",
+    "question": "Which of the following statements is NOT true?",
+    "explanation": "To seed our database, we use a seeds file.",
     "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
+      { "answerText": "A schema is used to create and define a database.", "isCorrectAnswer": false },
+      { "answerText": "A schema is used to seed data.", "isCorrectAnswer": true },
+      {
+        "answerText": "A schema includes one or more tables, which describe how the data will be stored.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "A schema always belong to a single database.", "isCorrectAnswer": false }
     ]
   },
   {
