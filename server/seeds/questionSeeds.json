@@ -882,8 +882,32 @@
     ]
   },
   {
-    "lesson": "",
-    "category": "",
+    "lesson": "14",
+    "category": "BackEnd",
+    "question": "Which of the following is an example of conditional access?",
+    "explanation": " If a user is not authorized, they see a screen letting them know that they're unauthorized; if they are authorized, they can view the content they are authorized to view.",
+    "answers": [
+      {
+        "answerText": "If a user is not authorized, they are forbidden from accessing the site again.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "If a user is not authorized, they see a screen letting them know that they're unauthorized; if they are authorized, they can view the content they are authorized to view.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "If a user is authorized once, they don't need to put in their password to log in.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "If a user is authorized, they can view all of the content without any restraints.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "14",
+    "category": "BackEnd",
     "question": "",
     "explanation": "",
     "answers": [
@@ -894,8 +918,8 @@
     ]
   },
   {
-    "lesson": "",
-    "category": "",
+    "lesson": "14",
+    "category": "BackEnd",
     "question": "",
     "explanation": "",
     "answers": [
@@ -906,8 +930,8 @@
     ]
   },
   {
-    "lesson": "",
-    "category": "",
+    "lesson": "14",
+    "category": "BackEnd",
     "question": "",
     "explanation": "",
     "answers": [
@@ -918,20 +942,8 @@
     ]
   },
   {
-    "lesson": "",
-    "category": "",
-    "question": "",
-    "explanation": "",
-    "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
-    ]
-  },
-  {
-    "lesson": "",
-    "category": "",
+    "lesson": "14",
+    "category": "BackEnd",
     "question": "",
     "explanation": "",
     "answers": [
