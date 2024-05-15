@@ -439,7 +439,7 @@
   },
   {
     "lesson": "6",
-    "category": "API",
+    "category": "APIs",
     "question": "When using AJAX to retreive data, we pass in the GET method and what else as parameters?",
     "explanation": "We pass in the URL, which specifies which URL we want to request data from.",
     "answers": [
@@ -699,6 +699,78 @@
       { "answerText": "fs.readFileSync()", "isCorrectAnswer": false },
       { "answerText": "fs.fstat()", "isCorrectAnswer": false },
       { "answerText": "fs.readFile()", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "Which command do we use to execute a file in the PostgreSQL Shell? All options are preceded by a back slash.",
+    "explanation": "We use i and then the path to the file to execute files such as schema.sql and seeds.sql.",
+    "answers": [
+      { "answerText": "d", "isCorrectAnswer": false },
+      { "answerText": "l", "isCorrectAnswer": false },
+      { "answerText": "dt", "isCorrectAnswer": false },
+      { "answerText": "i", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "How do we store data in tables?",
+    "explanation": " Tables are made up of columns and rows, where the columns represent a collection of each datatype and a row represents a single data item in that collection.",
+    "answers": [
+      {
+        "answerText": "A table is made up of columns and rows. Both a column and a row represent a single structured data item in a table.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A table is made up of columns and rows. Both columns and rows are collections of a particular datatype.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A table is made up of columns and rows. Columns are a collection of data of a particular datatype, while rows represent a single structured data item in a table. ",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "A table is made up of columns and rows. Rows are a collection of data of a particular datatype while columns represent a single point of data in that row.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
     ]
   },
   {
