@@ -66,3 +66,32 @@ body {
   transition: 150ms;
   transform: perspective(1000px) rotateY(var(--rotate-y, 0));
 }
+
+.card:hover {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card.flip {
+  --rotate-y: 180deg;
+}
+
+.card .front,
+.card .back {
+  position: absolute;
+  padding: 1rem;
+  backface-visibility: hidden;
+}
+
+.card .back {
+  transform: rotateY(180deg);
+}
+
+.flashcard-options {
+  margin-top: 0.5rem;
+}
+
+.flashcard-option {
+  margin-top: 0.25rem;
+  color: #555;
+  font-size: 0.8rem;
+}
