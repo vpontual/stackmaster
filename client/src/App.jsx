@@ -4,6 +4,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@ap
 import { setContext } from '@apollo/client/link/context';
 import axios from 'axios';
 
+import Home from './pages/Home';
 import auth from './utils/auth.js';
 import Header from './components/Header';
 import Choice from './pages/Choice';
@@ -74,7 +75,8 @@ function App() {
         <Header />
         <Routes>
           {/* Public route accessible to all */}
-          <Route path="/" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
+          {/* <Route path="/" element={<Login setIsLoggedIn={setIsLoggedIn} />} /> */}
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
 
           {/* Redirect to login if user is not logged in */}
