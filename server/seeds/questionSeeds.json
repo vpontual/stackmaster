@@ -740,13 +740,13 @@
   {
     "lesson": "12",
     "category": "Databases",
-    "question": "",
-    "explanation": "",
+    "question": "What is the best data type to use for a column that will hold a short string containing 30 characters or less?",
+    "explanation": "VARCHAR(30) is the best choice to designate strings of variable lengths up to 30 characters.",
     "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
+      { "answerText": "BOOLEAN", "isCorrectAnswer": false },
+      { "answerText": "TEXT", "isCorrectAnswer": false },
+      { "answerText": "CHAR", "isCorrectAnswer": false },
+      { "answerText": "VARCHAR(30)", "isCorrectAnswer": true }
     ]
   },
   {
