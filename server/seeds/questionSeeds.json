@@ -1,7 +1,7 @@
 [
   {
     "lesson": "1",
-    "category": "HTML",
+    "category": "HTMLCSS",
     "question": "What is the purpose of the alt attribute for images?",
     "explanation": "The alt tag is what a text description of the image. This is particularly useful for users who rely on a screen reader.",
     "answers": [
@@ -16,7 +16,7 @@
   },
   {
     "lesson": "1",
-    "category": "HTML",
+    "category": "HTMLCSS",
     "question": "What is an HTML semantic element?",
     "explanation": "",
     "answers": [
@@ -37,7 +37,7 @@
   },
   {
     "lesson": "1",
-    "category": "CSS",
+    "category": "HTMLCSS",
     "question": "Given the following CSS selector, which HTML element would be the outermost/parent element? header nav ul li {color: white;}",
     "explanation": "Header is the outermost element making it the parent. All other elements are contained within the header making them the children.",
     "answers": [
@@ -49,7 +49,7 @@
   },
   {
     "lesson": "1",
-    "category": "CSS",
+    "category": "HTMLCSS",
     "question": "Which of the following is not a component of the box model?",
     "explanation": "The components of a box model are margin border padding and the content.",
     "answers": [
@@ -61,7 +61,7 @@
   },
   {
     "lesson": "1",
-    "category": "HTML",
+    "category": "HTMLCSS",
     "question": "When linking a CSS file to an HTML file, where does the link go?",
     "explanation": "The link to the CSS file would be placed in the <head> element.",
     "answers": [
@@ -73,7 +73,7 @@
   },
   {
     "lesson": "1",
-    "category": "HTML",
+    "category": "HTMLCSS",
     "question": "What does HTML stand for?",
     "explanation": "HyperText Markup Language",
     "answers": [
@@ -85,7 +85,7 @@
   },
   {
     "lesson": "1",
-    "category": "CSS",
+    "category": "HTMLCSS",
     "question": "What does CSS stand for?",
     "explanation": "Cascading Style Sheets",
     "answers": [
@@ -97,7 +97,7 @@
   },
   {
     "lesson": "2",
-    "category": "CSS",
+    "category": "HTMLCSS",
     "question": "Which of the following is a true statement about pseudo-elements and pseudo-classes?",
     "explanation": "Pseudo-elements also differ from pseudo-classes in that they act as if you had added a whole new HTML element into the markup instead of applying a class to existing elements.",
     "answers": [
@@ -112,7 +112,7 @@
   },
   {
     "lesson": "2",
-    "category": "CSS",
+    "category": "HTMLCSS",
     "question": "How do you declare a custom property or CSS variable?",
     "explanation": "Variables are set within the root and are called with var.",
     "answers": [
@@ -124,7 +124,7 @@
   },
   {
     "lesson": "2",
-    "category": "CSS",
+    "category": "HTMLCSS",
     "question": "How would you create a box with rounded corners using CSS?",
     "explanation": "The border-radius property allows you to style a box to have rounded corners.",
     "answers": [
@@ -136,7 +136,7 @@
   },
   {
     "lesson": "2",
-    "category": "CSS",
+    "category": "HTMLCSS",
     "question": "Which of the following is not a unit of measurement in CSS?",
     "explanation": "Centemeters are not used in CSS.",
     "answers": [
@@ -148,7 +148,7 @@
   },
   {
     "lesson": "2",
-    "category": "CSS",
+    "category": "HTMLCSS",
     "question": "What does the 'Cascading' in CSS refer to?",
     "explanation": "The style flow from the top down, cascading down like a waterfall.",
     "answers": [
@@ -361,7 +361,7 @@
   },
   {
     "lesson": "5",
-    "category": "HTML",
+    "category": "JavaScript",
     "question": "Which HTML element can the submit event be attached to?",
     "explanation": "You can attach the submit event to the HTML form element.",
     "answers": [
@@ -801,6 +801,156 @@
       },
       { "answerText": "A JOIN is used to combine one or more columns from related tables.", "isCorrectAnswer": false },
       { "answerText": "A JOIN is used to combine one or more rows from related tables.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "BackEnd",
+    "question": "What is the purpose of the dotenv file (.env)?",
+    "explanation": "It protects sensitive environment variables that should not be accessed by users.",
+    "answers": [
+      {
+        "answerText": "It protects sensitive environment variables that should not be accessed by users.",
+        "isCorrectAnswer": true
+      },
+      { "answerText": "It hides short-term environment variables.", "isCorrectAnswer": false },
+      { "answerText": "It lets the user configure their own environment variables.", "isCorrectAnswer": false },
+      {
+        "answerText": "It configures environment variables so they are easier to find for users and developers.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "Databases",
+    "question": "Which are the three most commonly used data types available to use inside a Sequelize model?",
+    "explanation": "The most commonly used data types in Sequelize are string, boolean, and number.",
+    "answers": [
+      { "answerText": "Route, boolean, and controller.", "isCorrectAnswer": false },
+      { "answerText": "Object, array, and number.", "isCorrectAnswer": false },
+      { "answerText": "String, array, and class.", "isCorrectAnswer": false },
+      { "answerText": "String, boolean, and number.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "BackEnd",
+    "question": "What does CRUD stand for?",
+    "explanation": "CRUD stands for CREATE, READ, UPDATE, and DELETE. These operations are the four basic functions of persistent storage.",
+    "answers": [
+      { "answerText": "CONSTRUCT, REVISE, UPLOAD, DESTROY", "isCorrectAnswer": false },
+      { "answerText": "CURATE, REUPLOAD, UNINSTALL, DELETE", "isCorrectAnswer": false },
+      { "answerText": "CREATE, REWRITE, UPDATE, DELETE", "isCorrectAnswer": false },
+      { "answerText": "CREATE, READ, UPDATE, DELETE", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "BackEnd",
+    "question": "Which statement below is NOT true about async/await?",
+    "explanation": "async/await does not improve the speed of our applications, but it does clean up our code.",
+    "answers": [
+      { "answerText": "It improves the speed of our applications.", "isCorrectAnswer": true },
+      { "answerText": "It allows for better error handling when paired with try/catch.", "isCorrectAnswer": false },
+      { "answerText": "It increases the readability of code.", "isCorrectAnswer": false },
+      { "answerText": "It eliminates the need for then promise chains.", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "Databases",
+    "question": "Name the four main association types in Sequelize.",
+    "explanation": "The four main associations in Sequelize are HasOne, BelongsTo, HasMany, and BelongsToMany.",
+    "answers": [
+      { "answerText": "HasSingle, BelongsToSingle, HasMultiple, BelongsToMultiple", "isCorrectAnswer": false },
+      { "answerText": "HasOne, BelongsToOne, HasMultiple, BelongsToMultiple", "isCorrectAnswer": false },
+      { "answerText": "HasOne, BelongsTo, HasMany, BelongsToMany", "isCorrectAnswer": false },
+      { "answerText": "HasSingle, BelongsToSingle, HasMany, BelongsToMany", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "Databases",
+    "question": "How would you write the Sequelize .findAll() method as a literal in SQL?",
+    "explanation": "SELECT * FROM database is the raw SQL for the .findAll() method.",
+    "answers": [
+      { "answerText": "SELECT * FROM database", "isCorrectAnswer": true },
+      { "answerText": "SELECT all FROM database", "isCorrectAnswer": false },
+      { "answerText": "SELECT users FROM database", "isCorrectAnswer": false },
+      { "answerText": "SELECT * LOCATION database", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
     ]
   }
 ]
