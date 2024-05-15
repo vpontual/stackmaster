@@ -767,13 +767,25 @@
   {
     "lesson": "12",
     "category": "Databases",
-    "question": "",
-    "explanation": "",
+    "question": "Which statement best describes the difference between a primary and foreign key?",
+    "explanation": "A primary key is used to provide a unique identifier to a row in a table, while a foreign key is used to define a relationship between two tables.",
     "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
+      {
+        "answerText": "Both a primary or foreign key are used to provide a unique identifier for each row of data in a table.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A foreign key in a table uniquely identifies each row in the table while a primary key is used to define relationships between tables.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A primary key provides a unique identifier for a row of data while a foreign key provides a unique identifier to a column of data.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A primary key in a table uniquely identifies each record in the table, while a foreign key is used to define a relationship between tables. ",
+        "isCorrectAnswer": true
+      }
     ]
   },
   {
