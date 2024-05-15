@@ -448,5 +448,164 @@
       { "answerText": "fetch", "isCorrectAnswer": false },
       { "answerText": "JSON", "isCorrectAnswer": false }
     ]
+  },
+  {
+    "lesson": "9",
+    "category": "JavaScript",
+    "question": "How would we convert the following function to an arrow function? let mood = function(emotion) {}",
+    "explanation": "We remove the function keyword before the parameter ((emotion)) and add the arrow (=>) after the parameter and before the body braces.",
+    "answers": [
+      { "answerText": "let mood => ()emotion) => {}", "isCorrectAnswer": false },
+      { "answerText": "let mood = (emotion) => {}", "isCorrectAnswer": true },
+      { "answerText": "let function mood(emotion) => {}", "isCorrectAnswer": false },
+      { "answerText": "function = mood(emotion) => {}", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "9",
+    "category": "JavaScript",
+    "question": "We need to iterate over data in an array. Which method would we use to do this?",
+    "explanation": "map() will iterate over each index in the array.",
+    "answers": [
+      { "answerText": ".filter()", "isCorrectAnswer": false },
+      { "answerText": ".forEach()", "isCorrectAnswer": false },
+      { "answerText": ".map()", "isCorrectAnswer": true },
+      { "answerText": ".reduce()", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "9",
+    "category": "BackEnd",
+    "question": "What is the purpose of object destructuring?",
+    "explanation": "Destructuring lets us unpack properties from an object and create their own distinct variable.",
+    "answers": [
+      { "answerText": "It lets us transform an object into an array of key/value pairs.", "isCorrectAnswer": false },
+      {
+        "answerText": "It lets us easily map through our object in order to update the update the values.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "It lets us pass an object as a function's argument.", "isCorrectAnswer": false },
+      {
+        "answerText": "It lets us unpack properties from an object and create their own distinct variable.",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "9",
+    "category": "BackEnd",
+    "question": "What is npm short for and what does it do?",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "Node Play Model. It's a Command Line Interface (CLI) that Node.js developers use when dealing with media files inside their applications.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Node Package Maker. It's a tool that allows developers to easily ship their code to businesses that require it.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Node Prototype Module. It's a design philosophy used when creating Node.js applications.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Node Package Manager. It's an open source online repository used to share and borrow packages in Node.js, with its own Command Line Interface (CLI).",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "9",
+    "category": "JavaScript",
+    "question": "How do we convert JSON data to a string?",
+    "explanation": "",
+    "answers": [
+      { "answerText": "JSON.string()", "isCorrectAnswer": false },
+      { "answerText": "JSON.stringify()", "isCorrectAnswer": true },
+      { "answerText": "JSON.toString()", "isCorrectAnswer": false },
+      { "answerText": "JSON.stringing()", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "10",
+    "category": "OOP",
+    "question": "What is polymorphism in terms of OOP?",
+    "explanation": "It provides a way to perform a single action in different forms.",
+    "answers": [
+      { "answerText": "It provides a way to perform a single action in different forms.", "isCorrectAnswer": true },
+      { "answerText": "It provides the ability to reuse the code of existing Classes.", "isCorrectAnswer": false },
+      {
+        "answerText": "It describes the idea of bundling data and methods that work on that data within one unit.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "It is the mechanism of hiding data implementation by restricting access to public methods.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "10",
+    "category": "OOP",
+    "question": "What is the purpose of writing failing tests in TDD?",
+    "explanation": "To clearly define the expected outcome before writing any code.",
+    "answers": [
+      {
+        "answerText": "To speed up the development process by skipping directly to writing code.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "To ensure that the tests pass without any issues.", "isCorrectAnswer": false },
+      { "answerText": "To satisfy code coverage.", "isCorrectAnswer": false },
+      { "answerText": "To clearly define the expected outcome before writing any code.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "10",
+    "category": "OOP",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "10",
+    "category": "OOP",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "10",
+    "category": "OOP",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
   }
 ]
