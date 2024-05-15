@@ -14,9 +14,9 @@ const Categories = () => {
   return (
     <div>
       <h1 className="flex justify-center p-20 text-header">Select a Category</h1>
-      <div className="flex justify-center justify-items-center w-90 h-40 text-4xl grid gap-4 grid-cols-3">
+      <div className="flex justify-center justify-items-center w-3/5 h-40 ml-56 text-4xl grid gap-y-8 grid-cols-2">
         {categories.map((category) => (
-          <div className="bg-index p-5 rounded-xl w-60 text-center" key={category.id}>
+          <div className="flex justify-center items-center bg-index p-5 rounded h-40 w-80 text-center" key={category.id}>
             <Link
               className="text-banner hover:text-header hover:animate-jump-in"
               key={category.id}
