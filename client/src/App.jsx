@@ -40,6 +40,30 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://opentdb.com/api.php?amount=10').then((res) => {
+      setCards(
+        res.data.results.map((item, index) => {
+          let decoded_incorrect = item.incorrect_answers.map((it) => decodeString(it));
+          return {
+            id: `${index}-${Date.now()}`,
+            question: decodeString(item.question),
+            answer: decodeString(item.correct_answer),
+            options: [...decoded_incorrect, decodeString(item.correct_answer)],
+          };
+        })
+      );
+    });
+  }, []);
+
+  function decodeString(str) {
+    const textArea = document.createElement('textarea');
+    textArea.innerHTML = str;
+    return textArea.value;
+  }
+
   return (
     <ApolloProvider client={client}>
       <div className="d-flex flex-column min-vh-100">
