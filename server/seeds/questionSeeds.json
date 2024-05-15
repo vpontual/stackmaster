@@ -224,7 +224,7 @@
     "question": "Why do we need to convert an object into JSON in order for it to properly persist to local storage?",
     "explanation": "We convert an object to a string using JSON because local storage can only store strings.",
     "answers": [
-      { "answerText": "Local storage only accepts JSON objects. ", "isCorrectAnswer": true },
+      { "answerText": "Local storage only accepts JSON objects.", "isCorrectAnswer": true },
       {
         "answerText": "Local storage can only store strings, so we convert the object to a JSON string to store it properly.",
         "isCorrectAnswer": false
@@ -237,6 +237,66 @@
         "answerText": "It is convention to store objects using JSON, and we must follow that pattern so that our code is easy to read.",
         "isCorrectAnswer": false
       }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
     ]
   }
 ]
