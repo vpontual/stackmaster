@@ -13,10 +13,10 @@ const Categories = () => {
 
   return (
     <div>
-      <h1>Select a Category</h1>
-      <div>
+      <h1 className="flex justify-center p-20 text-header">Select a Category</h1>
+      <div className="flex justify-center justify-items-center w-90 h-40  bg-banner text-4xl grid gap-4 grid-cols-3">
         {categories.map(category => (
-          <Link key={category.id} to={`/study/${category.name}`} style={{ display: 'block', margin: '10px 0' }}>
+          <Link className="text-inherit hover:text-green-800 hover:animate-jump-in"key={category.id} to={`/study/${category.name}`} style={{ display: 'block', margin: '10px 0' }}>
             {category.name}
           </Link>
         ))}
