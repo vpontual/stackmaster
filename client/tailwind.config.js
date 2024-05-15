@@ -8,7 +8,7 @@ export default {
         header: '#f9e2af',
       },
       backgroundImage: {
-        'index': "url(./assets/card.jpg)"
+        'index': "url(./assets/card.svg)"
       }
     },
   },
