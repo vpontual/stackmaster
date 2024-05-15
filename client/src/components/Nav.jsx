@@ -1,7 +1,14 @@
 import { NavLink } from 'react-router-dom';
 
+import Auth from '../utils/auth';
+
 // The Navigation component should render a list of NavLink components.
 const Navigation = ({ navLinkStyle, activeNavLinkStyle }) => {
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
+
   return (
     <nav>
       <ul
@@ -12,49 +19,45 @@ const Navigation = ({ navLinkStyle, activeNavLinkStyle }) => {
           margin: 0,
           display: 'flex',
           color: 'white',
-        }}
-      >
+        }}>
         <li className="nav-item" style={{ marginRight: '1rem' }}>
-          <NavLink
-            to="/study"
-            end
-            style={({ isActive }) =>
-              isActive ? activeNavLinkStyle : navLinkStyle
-            }
-          >
+          <NavLink to="/study" end style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
             Study
           </NavLink>
         </li>
-        <li className="nav-item" style={{ marginRight: '1rem' }}>
-          <NavLink
-            to="/quiz"
-            end
-            style={({ isActive }) =>
-              isActive ? activeNavLinkStyle : navLinkStyle
-            }
-          >
+        {/* <li className="nav-item" style={{ marginRight: '1rem' }}>
+          <NavLink to="/quiz" end style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
             Quiz
           </NavLink>
-        </li>
-        <li className="nav-item" style={{ marginRight: '1rem' }}>
-          <NavLink
-            to="/profile"
-            style={({ isActive }) =>
-              isActive ? activeNavLinkStyle : navLinkStyle
-            }
-          >
+        </li> */}
+        {/* <li className="nav-item" style={{ marginRight: '1rem' }}>
+          <NavLink to="/profile" style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
             Profile
           </NavLink>
-        </li>
+        </li> */}
         <li className="nav-item" style={{ marginRight: '1rem' }}>
-          <NavLink
-            to="/login"
-            style={({ isActive }) =>
-              isActive ? activeNavLinkStyle : navLinkStyle
-            }
-          >
-            Login / Register
-          </NavLink>
+          {Auth.loggedIn() ? (
+            <>
+              <NavLink to="/me" style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
+                Profile
+              </NavLink>
+              <NavLink
+                to="/login"
+                onClick={logout}
+                style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
+                Logout
+              </NavLink>
+            </>
+          ) : (
+            <>
+              <NavLink to="/login" style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
+                Login
+              </NavLink>
+              <NavLink to="/signup" style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
+                Sign Up
+              </NavLink>
+            </>
+          )}
         </li>
       </ul>
     </nav>
