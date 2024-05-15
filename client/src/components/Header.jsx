@@ -19,10 +19,12 @@ const Header = () => {
   return (
     <header className="flex justify-between items-center bg-banner text-header p-4">
       <h1 className="m-0 text-4xl">StackMaster</h1>
-      <Navigation
+      <div>
+      <Navigation className="text-inherit hover:text-green-800"
         navLinkStyle={navLinkStyle}
         activeNavLinkStyle={activeNavLinkStyle}
       />
+      </div>
     </header>
   );
 };
