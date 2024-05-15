@@ -1,7 +1,9 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import { useState } from 'react';
 
+import auth from './utils/auth.js';
 import Header from './components/Header';
 import Choice from './pages/Choice';
 import Login from './pages/Login.jsx';
@@ -35,18 +37,26 @@ const client = new ApolloClient({
 });
 
 const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(auth.loggedIn());
+
+  // Function to redirect to login if user is not logged in
+
   return (
     <ApolloProvider client={client}>
       <div className="d-flex flex-column min-vh-100">
         <Header />
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/categories" element={<Categories />} />
-          <Route path="/study/:name" element={<Study />} />
-          {/* <Route path="/quiz" element={<Quiz />} /> */}
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/choice" element={<Choice />} />
+          {/* Public route accessible to all */}
+          <Route path="/" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
+
+          {/* Redirect to login if user is not logged in */}
+          <Route path="/categories" element={isLoggedIn ? <Categories /> : <Navigate to="/login" />} />
+          <Route path="/study/" element={isLoggedIn ? <Study /> : <Navigate to="/login" />} />
+          {/* <Route path="/quiz" element={isLoggedIn ? <Quiz /> : <Navigate to="/login" />} /> */}
+          <Route path="/study/:name" element={isLoggedIn ? <Study /> : <Navigate to="/login" />} />
+          <Route path="/signup" element={isLoggedIn ? <Navigate to="/choice" /> : <Signup />} />
+          <Route path="/choice" element={isLoggedIn ? <Choice /> : <Navigate to="/login" />} />
         </Routes>
         <Footer />
       </div>
