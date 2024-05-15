@@ -563,37 +563,37 @@
   {
     "lesson": "10",
     "category": "OOP",
-    "question": "",
-    "explanation": "",
+    "question": "What are the stages of TDD in the correct order?",
+    "explanation": "First write a test that fails, then pass the test however possible, then refactor the code.",
     "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
+      { "answerText": "Fail --> Pass --> Refactor", "isCorrectAnswer": true },
+      { "answerText": "Test --> Code --> Pass", "isCorrectAnswer": false },
+      { "answerText": "Code --> Test --> Pass", "isCorrectAnswer": false },
+      { "answerText": "Pass --> Fail --> Refactor", "isCorrectAnswer": false }
     ]
   },
   {
     "lesson": "10",
     "category": "OOP",
-    "question": "",
-    "explanation": "",
+    "question": "What is Jest?",
+    "explanation": "Jest is a popular JavaScript testing framework.",
     "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
+      { "answerText": "Jest is a library for managing state in React applications.", "isCorrectAnswer": false },
+      { "answerText": "Jest is a popular JavaScript testing framework.", "isCorrectAnswer": true },
+      { "answerText": "Jest is a front-end framework for building user interfaces.", "isCorrectAnswer": false },
+      { "answerText": "Jest is a build tool for JavaScript applications.", "isCorrectAnswer": false }
     ]
   },
   {
     "lesson": "10",
     "category": "OOP",
-    "question": "",
-    "explanation": "",
+    "question": "Which of the following is NOT true regarding Jest helpers?",
+    "explanation": "toBeUndefined actually only matches undefined, not null and false.",
     "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
+      { "answerText": "toBeDefined is the opposite of toBeUndefined.", "isCorrectAnswer": false },
+      { "answerText": "toBeNull only matches null.", "isCorrectAnswer": false },
+      { "answerText": "toBeTruthy matches anything that an if statement treats as true.", "isCorrectAnswer": false },
+      { "answerText": "toBeUndefined matches undefined, null, and false.", "isCorrectAnswer": true }
     ]
   },
   {
