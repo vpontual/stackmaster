@@ -19,18 +19,16 @@ export default function Login(props) {
     password: '',
   });
 
-  // use mutation here to add user
+  const [login, { error, data }] = useMutation(LOGIN_USER);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-
     setFormState({ ...formState, [name]: value });
-
     // reset error when user types
     setErrors({ ...errors, [name]: '' });
   };
 
-  const handleFormSubmit = (event) => {
+  const handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(formState);
     let valid = true;
@@ -55,6 +53,15 @@ export default function Login(props) {
     }
 
     // add try catch error for add user and authenticate login
+    try {
+      const { data } = await login({
+        variables: { ...formState },
+      });
+
+      Auth.login(data.login.token);
+    } catch (e) {
+      console.error(e);
+    }
 
     // valid form
     if (valid) {
