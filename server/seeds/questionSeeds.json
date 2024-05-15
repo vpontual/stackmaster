@@ -72,6 +72,30 @@
     ]
   },
   {
+    "lesson": "1",
+    "category": "HTML-CSS",
+    "question": "What does HTML stand for?",
+    "explanation": "HyperText Markup Language",
+    "answers": [
+      { "answerText": "HyperText Markup Language", "isCorrectAnswer": true },
+      { "answerText": "Hyperspace Textual Markup Lingo", "isCorrectAnswer": false },
+      { "answerText": "Holographic Text Manipulation Logic", "isCorrectAnswer": false },
+      { "answerText": "Hungry Tiger Markup Lexicon", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "1",
+    "category": "HTML-CSS",
+    "question": "What does CSS stand for?",
+    "explanation": "Cascading Style Sheets",
+    "answers": [
+      { "answerText": "Cascading Style Sheets", "isCorrectAnswer": true },
+      { "answerText": "Computer Script System", "isCorrectAnswer": false },
+      { "answerText": "Custom Style Script", "isCorrectAnswer": false },
+      { "answerText": "Cascading Script Sheets", "isCorrectAnswer": false }
+    ]
+  },
+  {
     "lesson": "2",
     "category": "Advanced-CSS",
     "question": "Which of the following is a true statement about pseudo-elements and pseudo-classes?",
@@ -90,12 +114,48 @@
     "lesson": "2",
     "category": "Advanced-CSS",
     "question": "How do you declare a custom property or CSS variable?",
-    "explanation": "",
+    "explanation": "Variables are set within the root and are called with var.",
     "answers": [
       { "answerText": "var root-my-color = green", "isCorrectAnswer": false },
       { "answerText": ":root { --my-color: green; }", "isCorrectAnswer": true },
       { "answerText": "var my-color = green", "isCorrectAnswer": false },
       { "answerText": ":root { var my-color = green }", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "2",
+    "category": "Advanced-CSS",
+    "question": "How would you create a box with rounded corners using CSS?",
+    "explanation": "The border-radius property allows you to style a box to have rounded corners.",
+    "answers": [
+      { "answerText": "transform: round(corner)", "isCorrectAnswer": false },
+      { "answerText": "box-corner: round;", "isCorrectAnswer": false },
+      { "answerText": "border-radius: 50px;", "isCorrectAnswer": true },
+      { "answerText": "corner-style: round;", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "2",
+    "category": "Advanced-CSS",
+    "question": "Which of the following is not a unit of measurement in CSS?",
+    "explanation": "Centemeters are not used in CSS.",
+    "answers": [
+      { "answerText": "Pixels (px)", "isCorrectAnswer": false },
+      { "answerText": "Percentages (%)", "isCorrectAnswer": false },
+      { "answerText": "Em (em)", "isCorrectAnswer": false },
+      { "answerText": "Centimeters (cm)", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "2",
+    "category": "Advanced-CSS",
+    "question": "What does the 'Cascading' in CSS refer to?",
+    "explanation": "The style flow from the top down, cascading down like a waterfall.",
+    "answers": [
+      { "answerText": "The flow of text within an HTML document", "isCorrectAnswer": true },
+      { "answerText": "The ability to apply multiple styles to an element", "isCorrectAnswer": false },
+      { "answerText": "The hierarchical order of style precedence", "isCorrectAnswer": false },
+      { "answerText": "The animation effects applied to elements", "isCorrectAnswer": false }
     ]
   },
   {
@@ -119,7 +179,7 @@
       { "answerText": "Question mark (?)", "isCorrectAnswer": false },
       { "answerText": "Colon (:)", "isCorrectAnswer": false },
       { "answerText": "Equal sign (=)", "isCorrectAnswer": true },
-      { "answerText": "D - Double-equal (==)", "isCorrectAnswer": false }
+      { "answerText": "Double-equal (==)", "isCorrectAnswer": false }
     ]
   },
   {
@@ -172,7 +232,7 @@
   },
   {
     "lesson": "4",
-    "category": "Web APIs",
+    "category": "WebAPIs",
     "question": "Which value would we add to setInterval() if we want a function called myTimer() to run every 3 seconds?",
     "explanation": "Interval is always entered in milliseconds.",
     "answers": [
@@ -184,7 +244,7 @@
   },
   {
     "lesson": "4",
-    "category": "Web APIs",
+    "category": "WebAPIs",
     "question": "Which event property can you use in order to implement event delegation? ",
     "explanation": "We can use event.target to implement event delegation on a parent element and check for events on child elements that bubble up to the parent element. This allows us to handle events for multiple child elements without creating event handlers for each of the elements.",
     "answers": [
@@ -196,7 +256,7 @@
   },
   {
     "lesson": "4",
-    "category": "Web APIs",
+    "category": "WebAPIs",
     "question": "Which statement best describes what is happening to data when it is persisted to local storage?",
     "explanation": "When data is persisted to local storage, it is stored in the client, or browser.",
     "answers": [
@@ -208,7 +268,7 @@
   },
   {
     "lesson": "4",
-    "category": "Web APIs",
+    "category": "WebAPIs",
     "question": "You need to retrieve data with the key name of 'formData' from local storage and convert it into an object. How would you accomplish this?",
     "explanation": "We converted formData to a JSON string in order to store it, and now we need to parse it in order to convert it back into an object.",
     "answers": [
@@ -220,7 +280,7 @@
   },
   {
     "lesson": "4",
-    "category": "Web APIs",
+    "category": "WebAPIs",
     "question": "Why do we need to convert an object into JSON in order for it to properly persist to local storage?",
     "explanation": "We convert an object to a string using JSON because local storage can only store strings.",
     "answers": [
@@ -237,6 +297,66 @@
         "answerText": "It is convention to store objects using JSON, and we must follow that pattern so that our code is easy to read.",
         "isCorrectAnswer": false
       }
+    ]
+  },
+  {
+    "lesson": "5",
+    "category": "ThirdPartyAPIs",
+    "question": "What does CDN stand for?",
+    "explanation": "Content Delivery Network.",
+    "answers": [
+      { "answerText": "Content Distribution Network", "isCorrectAnswer": false },
+      { "answerText": "Centralized Data Network", "isCorrectAnswer": false },
+      { "answerText": "Cache Delivery Network", "isCorrectAnswer": false },
+      { "answerText": "Content Delivery Network", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "5",
+    "category": "ThirdPartyAPIs",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "5",
+    "category": "ThirdPartyAPIs",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "5",
+    "category": "ThirdPartyAPIs",
+    "question": "Which HTML element can the submit event be attached to?",
+    "explanation": "You can attach the submit event to the HTML form element.",
+    "answers": [
+      { "answerText": "form", "isCorrectAnswer": true },
+      { "answerText": "button", "isCorrectAnswer": false },
+      { "answerText": "input", "isCorrectAnswer": false },
+      { "answerText": "textarea", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "5",
+    "category": "ThirdPartyAPIs",
+    "question": "I want to capture when a user clicks on an element. Which jQuery event method should I use?",
+    "explanation": ".on() adds an event handler to an element. When used to listen for click events, the syntax would be .on('click').",
+    "answers": [
+      { "answerText": ".mouseout()", "isCorrectAnswer": false },
+      { "answerText": ".focus()", "isCorrectAnswer": false },
+      { "answerText": ".on()", "isCorrectAnswer": true },
+      { "answerText": ".mouseover()", "isCorrectAnswer": false }
     ]
   },
   {
