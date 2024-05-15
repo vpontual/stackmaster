@@ -7,6 +7,9 @@ export default {
         banner: '#11111b',
         header: '#f9e2af',
       },
+      backgroundImage: {
+        'index': "url(./assets/card.jpg)"
+      }
     },
   },
   plugins: [
