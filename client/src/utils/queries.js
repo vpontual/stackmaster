@@ -15,3 +15,19 @@ export const QUERY_QUESTIONS = gql`
     }
   }
 `;
+
+export const QUERY_CATEGORY_QUES = gql`
+  query QuestionsCategory($category: String!) {
+    questionsCategory(category: $category) {
+      _id
+      lesson
+      category
+      question
+      answers {
+        answerText
+        isCorrectAnswer
+      }
+      explanation
+    }
+  }
+`;
