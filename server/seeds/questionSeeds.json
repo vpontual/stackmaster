@@ -398,8 +398,8 @@
   {
     "lesson": "6",
     "category": "APIs",
-    "question": "Which status code shows a internal service error?",
-    "explanation": "",
+    "question": "Which status code shows a internal server error?",
+    "explanation": "500 indicates an internal server error.",
     "answers": [
       { "answerText": "200", "isCorrectAnswer": false },
       { "answerText": "404", "isCorrectAnswer": false },
@@ -411,7 +411,7 @@
     "lesson": "6",
     "category": "APIs",
     "question": "Which status code shows a page was not found?",
-    "explanation": "",
+    "explanation": "404 indicates a page was not found.",
     "answers": [
       { "answerText": "200", "isCorrectAnswer": false },
       { "answerText": "404", "isCorrectAnswer": true },
@@ -421,26 +421,32 @@
   },
   {
     "lesson": "6",
-    "category": "",
-    "question": "",
-    "explanation": "",
+    "category": "APIs",
+    "question": "What is the purpose of the fetch API?",
+    "explanation": "The fetch API uses methods like GET to make network requests that can retrieve data or resources fomr internal or external sources.",
     "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
+      { "answerText": "To build an API.", "isCorrectAnswer": false },
+      {
+        "answerText": "To make network requests, either internally in an application or to an external source.",
+        "isCorrectAnswer": true
+      },
+      { "answerText": "To turn JSON into JavaScript.", "isCorrectAnswer": false },
+      {
+        "answerText": "To redirect to a 404 Not Found page when the resource is unavailable.",
+        "isCorrectAnswer": false
+      }
     ]
   },
   {
     "lesson": "6",
-    "category": "",
-    "question": "",
-    "explanation": "",
+    "category": "API",
+    "question": "When using AJAX to retreive data, we pass in the GET method and what else as parameters?",
+    "explanation": "We pass in the URL, which specifies which URL we want to request data from.",
     "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
+      { "answerText": "a URL", "isCorrectAnswer": true },
+      { "answerText": "jQuery", "isCorrectAnswer": false },
+      { "answerText": "fetch", "isCorrectAnswer": false },
+      { "answerText": "JSON", "isCorrectAnswer": false }
     ]
   }
 ]
