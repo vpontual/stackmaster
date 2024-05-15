@@ -908,61 +908,25 @@
   {
     "lesson": "14",
     "category": "BackEnd",
-    "question": "",
-    "explanation": "",
+    "question": "How do Handlebars.js and other template engines help us preserve the Separation of Concerns principle?",
+    "explanation": "They allow us to create logic-free templates that ensure that the View is isolated from the business logic.",
     "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
-    ]
-  },
-  {
-    "lesson": "14",
-    "category": "BackEnd",
-    "question": "",
-    "explanation": "",
-    "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
-    ]
-  },
-  {
-    "lesson": "14",
-    "category": "BackEnd",
-    "question": "",
-    "explanation": "",
-    "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
-    ]
-  },
-  {
-    "lesson": "14",
-    "category": "BackEnd",
-    "question": "",
-    "explanation": "",
-    "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
-    ]
-  },
-  {
-    "lesson": "",
-    "category": "",
-    "question": "",
-    "explanation": "",
-    "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
+      {
+        "answerText": "They allow us to create logic-free templates that ensure that the View is isolated from the business logic. ",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "They allow us to write JavaScript in our HTML files in order to DRY up our code.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "They allow us to incorporate our logic into the View so that it is isolated from the Controller.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "They allow the View to communicate directly with the back end in order to isolate the Controller.",
+        "isCorrectAnswer": false
+      }
     ]
   }
 ]
