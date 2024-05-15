@@ -14,11 +14,11 @@ const Categories = () => {
   return (
     <div>
       <h1 className="flex justify-center p-20 text-header">Select a Category</h1>
-      <div className="flex justify-center justify-items-center w-90 h-40 text-4xl grid gap-4 grid-cols-3">
+      <div className="flex justify-center justify-items-center w-3/5 h-40 ml-56 text-4xl grid gap-y-10 grid-cols-2">
         {categories.map((category) => (
-          <div className="bg-banner p-5 rounded-xl w-60 text-center" key={category.id}>
+          <div className="flex justify-center items-center bg-index p-5 rounded h-40 w-80 text-center" key={category.id}>
             <Link
-              className="text-inherit hover:text-header hover:animate-jump-in"
+              className="text-banner hover:text-slate-400 hover:animate-bounce"
               key={category.id}
               to={`/study/${category.name}`}
               style={{ display: 'block', margin: '10px 0' }}>
