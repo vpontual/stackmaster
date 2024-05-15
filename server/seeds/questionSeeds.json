@@ -529,7 +529,7 @@
   },
   {
     "lesson": "10",
-    "category": "OOP",
+    "category": "BackEnd",
     "question": "What is polymorphism in terms of OOP?",
     "explanation": "It provides a way to perform a single action in different forms.",
     "answers": [
@@ -547,7 +547,7 @@
   },
   {
     "lesson": "10",
-    "category": "OOP",
+    "category": "BackEnd",
     "question": "What is the purpose of writing failing tests in TDD?",
     "explanation": "To clearly define the expected outcome before writing any code.",
     "answers": [
@@ -562,7 +562,7 @@
   },
   {
     "lesson": "10",
-    "category": "OOP",
+    "category": "BackEnd",
     "question": "What are the stages of TDD in the correct order?",
     "explanation": "First write a test that fails, then pass the test however possible, then refactor the code.",
     "answers": [
@@ -574,7 +574,7 @@
   },
   {
     "lesson": "10",
-    "category": "OOP",
+    "category": "BackEnd",
     "question": "What is Jest?",
     "explanation": "Jest is a popular JavaScript testing framework.",
     "answers": [
@@ -586,7 +586,7 @@
   },
   {
     "lesson": "10",
-    "category": "OOP",
+    "category": "BackEnd",
     "question": "Which of the following is NOT true regarding Jest helpers?",
     "explanation": "toBeUndefined actually only matches undefined, not null and false.",
     "answers": [
@@ -594,6 +594,111 @@
       { "answerText": "toBeNull only matches null.", "isCorrectAnswer": false },
       { "answerText": "toBeTruthy matches anything that an if statement treats as true.", "isCorrectAnswer": false },
       { "answerText": "toBeUndefined matches undefined, null, and false.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "11",
+    "category": "BackEnd",
+    "question": "What is Express.js and what is it used for?",
+    "explanation": "Express.js is a framework that is used in most Node.js back-end web applications. It provides developers with a flexible way to serve static files and create APIs.",
+    "answers": [
+      {
+        "answerText": "Express.js is a back-end application framework for Node.js. It provides a flexible way for developers to create web applications and APIs.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Express.js is an npm package that helps parse JSON and XML encoded form data.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Express.js is an open-source library for adding form functionality to front-end applications.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Express.js is a built-in Node.js framework that allows users to build a simple web server.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "11",
+    "category": "BackEnd",
+    "question": "What is the difference between a route and an endpoint?",
+    "explanation": "A route is actually a URI path that is used to access available endpoints. An endpoint performs one or more actions, can accept parameters, and sends back a response.",
+    "answers": [
+      {
+        "answerText": "An endpoint can only have one HTTP method associated with it, while routes can have many HTTP methods.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "An endpoint is a URI path used to access the available routes. A route performs one or more actions, can accept parameters, and sends back some response.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A route is a URI path used to access available endpoints. An endpoint performs one or more actions, can accept parameters, and sends back a response.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "An endpoint can have multiple routes, while a route can only have one endpoint.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "11",
+    "category": "BackEnd",
+    "question": "Which of the following definitions most accurately describes middleware?",
+    "explanation": "Middleware is a function that can access requests and optionally make changes to the data before passing them along to route handlers.",
+    "answers": [
+      {
+        "answerText": "Middleware is a function that provides access to a specific endpoint.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Middleware is implemented inside route handlers after a request has been received.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Middleware is a function that can access incoming requests before they reach route handlers.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Middleware is a function that accepts requests from a specific route.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "11",
+    "category": "BackEnd",
+    "question": "When creating a custom middleware function, which arguments should it accept?",
+    "explanation": "All middleware functions made using Express.js accept arguments modeled after the request, response, and next lifecycle methods.",
+    "answers": [
+      {
+        "answerText": "The custom middleware function should accept one argument, next, which calls the next middleware in the stack.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "The custom middleware function doesn't have any required arguments.", "isCorrectAnswer": false },
+      {
+        "answerText": "The custom middleware function should accept three arguments: req, res and error.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "The custom middleware function should accept three arguments: req, res, and next.",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "11",
+    "category": "BackEnd",
+    "question": "Which of the following methods of the built-in Node.js fs module is used to write data to the file system?",
+    "explanation": "The fs module's writeFile() method is used to write data to the file system. It accepts a filename or path, the data you want to write, and a callback function. If the specified file name doesn't exist, fs.writeFile() will first create the file and then write the desired data.",
+    "answers": [
+      { "answerText": "fs.writeFile()", "isCorrectAnswer": true },
+      { "answerText": "fs.readFileSync()", "isCorrectAnswer": false },
+      { "answerText": "fs.fstat()", "isCorrectAnswer": false },
+      { "answerText": "fs.readFile()", "isCorrectAnswer": false }
     ]
   },
   {
