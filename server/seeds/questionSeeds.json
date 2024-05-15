@@ -300,6 +300,24 @@
     ]
   },
   {
+    "lesson": "4",
+    "category": "WebAPIs",
+    "question": "What is an API?",
+    "explanation": "",
+    "answers": [
+      { "answerText": "An API allows two applications to run in tandem. ", "isCorrectAnswer": false },
+      {
+        "answerText": "An API allows two applications to communicate if they are both using the same server.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "An API allows two applications to be installed onto a user's computer.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "An API allows two applications to communicate with each other.", "isCorrectAnswer": true }
+    ]
+  },
+  {
     "lesson": "5",
     "category": "ThirdPartyAPIs",
     "question": "What does CDN stand for?",
@@ -314,13 +332,19 @@
   {
     "lesson": "5",
     "category": "ThirdPartyAPIs",
-    "question": "",
-    "explanation": "",
+    "question": "What is jQuery UI?",
+    "explanation": "jQuery UI is a curated set of user interface widgets, effects, and themes that extends the functionality of the core jQuery library.",
     "answers": [
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false },
-      { "answerText": "", "isCorrectAnswer": false }
+      { "answerText": "jQuery UI is a framework to create interactive user interfaces.", "isCorrectAnswer": false },
+      {
+        "answerText": "jQuery UI is a design pattern that has to be used when creating interactive UI's with JavaScript.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "jQuery UI is a set of user interface website templates.", "isCorrectAnswer": false },
+      {
+        "answerText": "jQuery UI is a curated set of user interface widgets, effects, and themes that extends the functionality of the core jQuery library.",
+        "isCorrectAnswer": false
+      }
     ]
   },
   {
