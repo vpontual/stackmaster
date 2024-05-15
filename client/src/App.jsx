@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
@@ -69,13 +69,15 @@ function App() {
 
   // Function to redirect to login if user is not logged in
 
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+
   return (
     <ApolloProvider client={client}>
       <div className="d-flex flex-column min-vh-100">
-        <Header />
+        {!isHomePage && <Header />}
         <Routes>
           {/* Public route accessible to all */}
-          {/* <Route path="/" element={<Login setIsLoggedIn={setIsLoggedIn} />} /> */}
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
 
@@ -91,31 +93,10 @@ function App() {
           <Route path="/signup" element={isLoggedIn ? <Navigate to="/choice" /> : <Signup />} />
           <Route path="/choice" element={isLoggedIn ? <Choice /> : <Navigate to="/login" />} />
         </Routes>
-        <Footer />
+        {!isHomePage && <Footer />}
       </div>
     </ApolloProvider>
   );
 }
-
-const SAMPLE_CARDS = [
-  {
-    id: 1,
-    question: 'What is 3 + 3 ?',
-    answer: '4',
-    options: ['2', '3', '5', '4'],
-  },
-  {
-    id: 2,
-    question: 'What is four + four ?',
-    answer: '8',
-    options: ['2', '3', '8', '4'],
-  },
-  {
-    id: 3,
-    question: 'What is six * six ?',
-    answer: '36',
-    options: ['2', '36', '5', '4'],
-  },
-];
 
 export default App;
