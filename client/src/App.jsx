@@ -1,6 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+import axios from 'axios';
 
 import Header from './components/Header';
 import Choice from './pages/Choice';
@@ -9,6 +11,9 @@ import Signup from './pages/Signup.jsx';
 import Categories from './pages/Categories';
 import Study from './pages/Study';
 import Footer from './components/Footer';
+import FlashcardList from './components/FlashcardList';
+
+import './App.css';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -34,7 +39,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-const App = () => {
+function App() {
   return (
     <ApolloProvider client={client}>
       <div className="d-flex flex-column min-vh-100">
@@ -45,6 +50,7 @@ const App = () => {
           <Route path="/categories" element={<Categories />} />
           <Route path="/study/:name" element={<Study />} />
           {/* <Route path="/quiz" element={<Quiz />} /> */}
+          <Route path="/flashcardlist" element={<FlashcardList flashcards={cards} />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/choice" element={<Choice />} />
         </Routes>
@@ -52,6 +58,6 @@ const App = () => {
       </div>
     </ApolloProvider>
   );
-};
+}
 
 export default App;
