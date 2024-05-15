@@ -789,6 +789,69 @@
     ]
   },
   {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "Which is the best description of a JOIN?",
+    "explanation": "The JOIN clause is used to combine one or more rows of data from two or more related tables.",
+    "answers": [
+      { "answerText": "A JOIN is used to combine one or more rows from unrelated tables.", "isCorrectAnswer": false },
+      {
+        "answerText": "A JOIN is used to combine one or more tables from related databases.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "A JOIN is used to combine one or more columns from related tables.", "isCorrectAnswer": false },
+      { "answerText": "A JOIN is used to combine one or more rows from related tables.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false },
+      { "answerText": "", "isCorrectAnswer": false }
+    ]
+  },
+  {
     "lesson": "",
     "category": "",
     "question": "",
