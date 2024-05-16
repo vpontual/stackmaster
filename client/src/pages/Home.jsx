@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSprings, animated, interpolate } from '@react-spring/web';
 import { useDrag } from 'react-use-gesture';
 import styles from '../styles.module.css';
 import { useParams } from 'react-router-dom';
 import card from '../assets/cardVert.svg';
 
-const cards = [card, card, card, card, card, card, card, card, card, card, card, card, card, card, card, card];
+const cards = [];
+
+for (let i = 0; i < 16; i++) {
+  cards.push(card);
+}
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
 const to = (i) => ({
@@ -13,7 +17,7 @@ const to = (i) => ({
   y: 400,
   scale: 1,
   rot: -10 + Math.random() * 60,
-  delay: i * 100,
+  delay: i * 250,
 });
 const from = () => ({
   x: 0,

@@ -21,15 +21,17 @@ const Navigation = ({ navLinkStyle, activeNavLinkStyle }) => {
           color: 'white',
         }}>
         <li className="nav-item" style={{ marginRight: '1rem' }}>
-          <NavLink to="/study" end style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
+          <NavLink to="/categories" end style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
             Study
           </NavLink>
         </li>
+        {/* REMOVE COMMENT WHEN QUIZ PAGE IS IMPLEMENTED */}
         {/* <li className="nav-item" style={{ marginRight: '1rem' }}>
           <NavLink to="/quiz" end style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
             Quiz
           </NavLink>
         </li> */}
+        {/* REMOVE COMMENT WHEN PROFILE PAGE IS IMPLEMENTED */}
         {/* <li className="nav-item" style={{ marginRight: '1rem' }}>
           <NavLink to="/profile" style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
             Profile
