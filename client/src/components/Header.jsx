@@ -17,13 +17,16 @@ const Header = () => {
   };
   // Return the header element with the h1 element and the Navigation component
   return (
-    <header className="flex justify-between items-center bg-banner text-header p-4">
-      <h1 className="m-0 text-4xl">StackMaster</h1>
+    <header className="flex justify-between items-center bg-banner text-header p-4 w-full">
+      <a className="no-underline hover:text-current text-header" href="/">
+        <h1 className="m-0 text-4xl">StackMaster</h1>
+      </a>
       <div>
-      <Navigation className="text-inherit hover:text-green-800"
-        navLinkStyle={navLinkStyle}
-        activeNavLinkStyle={activeNavLinkStyle}
-      />
+        <Navigation
+          className="text-inherit hover:text-green-800"
+          navLinkStyle={navLinkStyle}
+          activeNavLinkStyle={activeNavLinkStyle}
+        />
       </div>
     </header>
   );
