@@ -1,5 +1,5 @@
+//nav bar for header
 import { NavLink } from 'react-router-dom';
-
 import Auth from '../utils/auth';
 
 // The Navigation component should render a list of NavLink components.
