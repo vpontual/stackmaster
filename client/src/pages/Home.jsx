@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useSprings, animated, interpolate } from '@react-spring/web';
 import { useDrag } from 'react-use-gesture';
 import styles from '../styles.module.css';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import card from '../assets/cardVert.svg';
 
 const cards = [];
@@ -75,7 +75,7 @@ function Deck() {
     <>
       <h1 className="mt-40">Welcome To Stack Master!</h1>
       {props.map(({ x, y, rot, scale }, i) => (
-        <animated.div className={styles.deck} key={i} style={{ x, y }}>
+        <animated.div className={` ${styles.deck}`} key={i} style={{ x, y }}>
           {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
           <animated.div
             {...bind(i)}
@@ -90,8 +90,18 @@ function Deck() {
   );
 }
 
-export default function Study() {
+export default function Home() {
+  const navigate = useNavigate();
   const { name } = useParams();
   console.log(name);
-  return <div className={styles.container}>{<Deck />}</div>;
+
+  const handleLogin = () => {
+    navigate('/login');
+  };
+
+  return (
+    <div className={styles.container} onClick={handleLogin}>
+      {<Deck />}
+    </div>
+  );
 }
