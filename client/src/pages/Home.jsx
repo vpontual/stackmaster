@@ -5,7 +5,7 @@ import { useSprings, animated, interpolate } from '@react-spring/web';
 import { useDrag } from 'react-use-gesture';
 import styles from '../styles.module.css';
 import { useParams, useNavigate } from 'react-router-dom';
-import card from '../assets/cardVert.svg';
+import card from '../assets/cardVert.jpg';
 
 const cards = [];
 
