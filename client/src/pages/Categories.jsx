@@ -11,12 +11,12 @@ const Categories = () => {
   ];
 
   return (
-    <div>
-      <h1 className="flex justify-center p-10 text-header">Select a Category</h1>
-      <div className="flex justify-center justify-items-center w-3/5 h-40 ml-56 text-4xl grid gap-y-10 grid-cols-2">
+    <div className="flex flex-col items-center">
+      <h1 className="p-10 text-header">Select a Category</h1>
+      <div className="flex justify-items-center w-3/5 text-4xl grid grid-cols-1 md:grid-cols-2 gap-6">
         {categories.map((category) => (
           <div
-            className="flex justify-center items-center bg-index p-5 rounded h-40 w-80 text-center"
+            className="flex justify-center items-center bg-index p-5 rounded h-40 w-3/5 text-center"
             key={category.id}>
             <Link
               className="text-banner hover:text-slate-400 hover:animate-bounce"
