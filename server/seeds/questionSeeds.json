@@ -928,5 +928,294 @@
         "isCorrectAnswer": false
       }
     ]
+  }, 
+  {
+    "lesson": "18",
+    "category": "BackEnd",
+    "question": "Which MongoDB cursor method is best used if we only want to return a maximum of 10 documents?",
+    "explanation": "To constrain the maximum number of documents fetched, we use limit() and specify the maximum numeric value we want returned.",
+    "answers": [
+      {
+        "answerText": "limit()",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "sort()",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "skip()",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "contains()",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "18",
+    "category": "BackEnd",
+    "question": "Which method are you most likely to use when building a GET Route with Mongoose?",
+    "explanation": "The find() method is a great choice when you want to read and return documents from the database using Mongoose.",
+    "answers": [
+      {
+        "answerText": "insert()",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "update()",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "find()",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "deleteOne()",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "18",
+    "category": "BackEnd",
+    "question": "What is the difference between an instance method and a static method?",
+    "explanation": "An instance method is defined on an instance of the model, or document, and only acts on that instance. A static method is defined on the entire model and acts on the entire model. Both instance and static methods provide logic to interact with and manipulate data.",
+    "answers": [
+      {
+        "answerText": "Instance methods are used to perform an action on data that is likely to change over time, whereas static methods are used to perform an action on data that is not likely to change over time.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Instance methods perform an action on a specific instance, or document, whereas static methods perform actions on the entire model.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Instance methods perform an action on an entire model, or instance, whereas static methods perform an action on an entire database.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Instance methods perform a one-time action, whereas static methods can be reused. Both are primarily used on the entire model.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "18",
+    "category": "BackEnd",
+    "question": "Which of the following is NOT true about subdocuments?",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "In Mongoose, using subdocuments means you can nest schemas within other schemas",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Subdocuments are a great way to model relationships among connected data.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Each subdocument has its own _id by default.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Subdocuments have no relationship to embedded documents in MongoDB.",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "18",
+    "category": "BackEnd",
+    "question": "Which of the following best describes aggregation operations?",
+    "explanation": "Aggregate functions allow you to provide summary information about a group of documents, such as sum, average, or maximum.",
+    "answers": [
+      {
+        "answerText": "Aggregation operations compute results from each document individually, and return a result for each instance.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "When performing an aggregation operation, the $match stage is used to make sure the data includes only numeric values.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Aggregation operations compute data on a group of documents and return a single, summary result.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Aggregation operations that work in MongoDB will not work with Mongoose. They are not compatible.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "19",
+    "category": "BackEnd",
+    "question": "How does webpack --watch know when to reload after a change is made?",
+    "explanation": "Watch mode uses your application's dependency graph to check for changes in the files. If it detects a change, it recompiles your code.",
+    "answers": [
+      {
+        "answerText": "Webpack uses git diff to check whether commits are different.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Webpack checks the dependency graph for any changes that have been made.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Webpack triggers every time we save our code.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Webpack runs rebuild on a set timer.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "19",
+    "category": "BackEnd",
+    "question": "Which of the following will have a positive impact on your website?",
+    "explanation": "An accessible website provides more benefits than being easier to use. Search engines reward accessible websites, because SEO and accessibility overlap in multiple areas.",
+    "answers": [
+      {
+        "answerText": "Slow page loads.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": " No alt text on images.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Accessibility.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Using unnecessary JavaScript.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "BackEnd",
+    "question": "What is a bundle in webpack?",
+    "explanation": "A bundle in webpack is the output files that are generated, with all of the modules necessary to run the application.",
+    "answers": [
+      {
+        "answerText": "An output file that converts all of our JavaScript to next-gen JavaScript.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "The output files that contain all of the modules necessary to run the application.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "A JSON file that maps and caches all of the static assets for our website.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A configuration file that handles processing non-JavaScript files.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "BackEnd",
+    "question": "What is a loader in webpack?",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "A pre-generated dependency graph that our website can use as a template.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "BackEnd",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "BackEnd",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "",
+    "category": "BackEnd",
+    "question": "",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "",
+        "isCorrectAnswer": false
+      }
+    ]
   }
+
 ]
