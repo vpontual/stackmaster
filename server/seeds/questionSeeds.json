@@ -1432,53 +1432,5 @@
         "isCorrectAnswer": true
       }
     ]
-  },
-  {
-    "lesson": "",
-    "category": "BackEnd",
-    "question": "",
-    "explanation": "",
-    "answers": [
-      {
-        "answerText": "",
-        "isCorrectAnswer": true
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      }
-    ]
-  },
-  {
-    "lesson": "",
-    "category": "BackEnd",
-    "question": "",
-    "explanation": "",
-    "answers": [
-      {
-        "answerText": "",
-        "isCorrectAnswer": true
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      }
-    ]
   }
 ]

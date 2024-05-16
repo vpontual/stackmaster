@@ -1,3 +1,5 @@
+//landing page if user is not logged in
+
 import { useState } from 'react';
 import { useSprings, animated, interpolate } from '@react-spring/web';
 import { useDrag } from 'react-use-gesture';

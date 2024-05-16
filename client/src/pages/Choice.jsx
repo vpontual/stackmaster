@@ -1,3 +1,5 @@
+//page used for selecting if user wanted to study or take quiz
+
 import { Link } from 'react-router-dom';
 
 const Choice = () => {
