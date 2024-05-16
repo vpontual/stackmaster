@@ -10,7 +10,7 @@ const Categories = () => {
     { id: 5, name: 'Databases' },
     { id: 6, name: 'All' },
   ]
-
+//added div to encapsule link to provide style to each item in array
   return (
     <div>
       <h1 className="flex justify-center p-20 text-header">Select a Category</h1>

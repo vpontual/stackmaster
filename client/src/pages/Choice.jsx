@@ -15,7 +15,6 @@ const Choice = () => {
         <Link to="/quiz"className="text-banner hover:text-slate-500 hover:animate-bounce">Take Quiz</Link>
         </div>
       </div>
-      <div></div>
     </div>
   );
 };
