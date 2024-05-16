@@ -1,7 +1,7 @@
 [
   {
     "lesson": "1",
-    "category": "HTML-CSS",
+    "category": "HTMLCSS",
     "question": "What is the purpose of the alt attribute for images?",
     "explanation": "The alt tag is what a text description of the image. This is particularly useful for users who rely on a screen reader.",
     "answers": [
@@ -16,7 +16,7 @@
   },
   {
     "lesson": "1",
-    "category": "HTML-CSS",
+    "category": "HTMLCSS",
     "question": "What is an HTML semantic element?",
     "explanation": "",
     "answers": [
@@ -37,7 +37,7 @@
   },
   {
     "lesson": "1",
-    "category": "HTML-CSS",
+    "category": "HTMLCSS",
     "question": "Given the following CSS selector, which HTML element would be the outermost/parent element? header nav ul li {color: white;}",
     "explanation": "Header is the outermost element making it the parent. All other elements are contained within the header making them the children.",
     "answers": [
@@ -49,7 +49,7 @@
   },
   {
     "lesson": "1",
-    "category": "HTML-CSS",
+    "category": "HTMLCSS",
     "question": "Which of the following is not a component of the box model?",
     "explanation": "The components of a box model are margin border padding and the content.",
     "answers": [
@@ -61,7 +61,7 @@
   },
   {
     "lesson": "1",
-    "category": "HTML-CSS",
+    "category": "HTMLCSS",
     "question": "When linking a CSS file to an HTML file, where does the link go?",
     "explanation": "The link to the CSS file would be placed in the <head> element.",
     "answers": [
@@ -72,8 +72,32 @@
     ]
   },
   {
+    "lesson": "1",
+    "category": "HTMLCSS",
+    "question": "What does HTML stand for?",
+    "explanation": "HyperText Markup Language",
+    "answers": [
+      { "answerText": "HyperText Markup Language", "isCorrectAnswer": true },
+      { "answerText": "Hyperspace Textual Markup Lingo", "isCorrectAnswer": false },
+      { "answerText": "Holographic Text Manipulation Logic", "isCorrectAnswer": false },
+      { "answerText": "Hungry Tiger Markup Lexicon", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "1",
+    "category": "HTMLCSS",
+    "question": "What does CSS stand for?",
+    "explanation": "Cascading Style Sheets",
+    "answers": [
+      { "answerText": "Cascading Style Sheets", "isCorrectAnswer": true },
+      { "answerText": "Computer Script System", "isCorrectAnswer": false },
+      { "answerText": "Custom Style Script", "isCorrectAnswer": false },
+      { "answerText": "Cascading Script Sheets", "isCorrectAnswer": false }
+    ]
+  },
+  {
     "lesson": "2",
-    "category": "Advanced-CSS",
+    "category": "HTMLCSS",
     "question": "Which of the following is a true statement about pseudo-elements and pseudo-classes?",
     "explanation": "Pseudo-elements also differ from pseudo-classes in that they act as if you had added a whole new HTML element into the markup instead of applying a class to existing elements.",
     "answers": [
@@ -88,14 +112,50 @@
   },
   {
     "lesson": "2",
-    "category": "Advanced-CSS",
+    "category": "HTMLCSS",
     "question": "How do you declare a custom property or CSS variable?",
-    "explanation": "",
+    "explanation": "Variables are set within the root and are called with var.",
     "answers": [
       { "answerText": "var root-my-color = green", "isCorrectAnswer": false },
       { "answerText": ":root { --my-color: green; }", "isCorrectAnswer": true },
       { "answerText": "var my-color = green", "isCorrectAnswer": false },
       { "answerText": ":root { var my-color = green }", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "2",
+    "category": "HTMLCSS",
+    "question": "How would you create a box with rounded corners using CSS?",
+    "explanation": "The border-radius property allows you to style a box to have rounded corners.",
+    "answers": [
+      { "answerText": "transform: round(corner)", "isCorrectAnswer": false },
+      { "answerText": "box-corner: round;", "isCorrectAnswer": false },
+      { "answerText": "border-radius: 50px;", "isCorrectAnswer": true },
+      { "answerText": "corner-style: round;", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "2",
+    "category": "HTMLCSS",
+    "question": "Which of the following is not a unit of measurement in CSS?",
+    "explanation": "Centemeters are not used in CSS.",
+    "answers": [
+      { "answerText": "Pixels (px)", "isCorrectAnswer": false },
+      { "answerText": "Percentages (%)", "isCorrectAnswer": false },
+      { "answerText": "Em (em)", "isCorrectAnswer": false },
+      { "answerText": "Centimeters (cm)", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "2",
+    "category": "HTMLCSS",
+    "question": "What does the 'Cascading' in CSS refer to?",
+    "explanation": "The style flow from the top down, cascading down like a waterfall.",
+    "answers": [
+      { "answerText": "The flow of text within an HTML document", "isCorrectAnswer": true },
+      { "answerText": "The ability to apply multiple styles to an element", "isCorrectAnswer": false },
+      { "answerText": "The hierarchical order of style precedence", "isCorrectAnswer": false },
+      { "answerText": "The animation effects applied to elements", "isCorrectAnswer": false }
     ]
   },
   {
@@ -119,7 +179,7 @@
       { "answerText": "Question mark (?)", "isCorrectAnswer": false },
       { "answerText": "Colon (:)", "isCorrectAnswer": false },
       { "answerText": "Equal sign (=)", "isCorrectAnswer": true },
-      { "answerText": "D - Double-equal (==)", "isCorrectAnswer": false }
+      { "answerText": "Double-equal (==)", "isCorrectAnswer": false }
     ]
   },
   {
@@ -172,7 +232,7 @@
   },
   {
     "lesson": "4",
-    "category": "Web APIs",
+    "category": "APIs",
     "question": "Which value would we add to setInterval() if we want a function called myTimer() to run every 3 seconds?",
     "explanation": "Interval is always entered in milliseconds.",
     "answers": [
@@ -184,7 +244,7 @@
   },
   {
     "lesson": "4",
-    "category": "Web APIs",
+    "category": "APIs",
     "question": "Which event property can you use in order to implement event delegation? ",
     "explanation": "We can use event.target to implement event delegation on a parent element and check for events on child elements that bubble up to the parent element. This allows us to handle events for multiple child elements without creating event handlers for each of the elements.",
     "answers": [
@@ -196,7 +256,7 @@
   },
   {
     "lesson": "4",
-    "category": "Web APIs",
+    "category": "APIs",
     "question": "Which statement best describes what is happening to data when it is persisted to local storage?",
     "explanation": "When data is persisted to local storage, it is stored in the client, or browser.",
     "answers": [
@@ -208,7 +268,7 @@
   },
   {
     "lesson": "4",
-    "category": "Web APIs",
+    "category": "APIs",
     "question": "You need to retrieve data with the key name of 'formData' from local storage and convert it into an object. How would you accomplish this?",
     "explanation": "We converted formData to a JSON string in order to store it, and now we need to parse it in order to convert it back into an object.",
     "answers": [
@@ -220,11 +280,11 @@
   },
   {
     "lesson": "4",
-    "category": "Web APIs",
+    "category": "APIs",
     "question": "Why do we need to convert an object into JSON in order for it to properly persist to local storage?",
     "explanation": "We convert an object to a string using JSON because local storage can only store strings.",
     "answers": [
-      { "answerText": "Local storage only accepts JSON objects. ", "isCorrectAnswer": true },
+      { "answerText": "Local storage only accepts JSON objects.", "isCorrectAnswer": true },
       {
         "answerText": "Local storage can only store strings, so we convert the object to a JSON string to store it properly.",
         "isCorrectAnswer": false
@@ -235,6 +295,636 @@
       },
       {
         "answerText": "It is convention to store objects using JSON, and we must follow that pattern so that our code is easy to read.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "4",
+    "category": "APIs",
+    "question": "What is an API?",
+    "explanation": "",
+    "answers": [
+      { "answerText": "An API allows two applications to run in tandem. ", "isCorrectAnswer": false },
+      {
+        "answerText": "An API allows two applications to communicate if they are both using the same server.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "An API allows two applications to be installed onto a user's computer.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "An API allows two applications to communicate with each other.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "5",
+    "category": "APIs",
+    "question": "What does CDN stand for?",
+    "explanation": "Content Delivery Network.",
+    "answers": [
+      { "answerText": "Content Distribution Network", "isCorrectAnswer": false },
+      { "answerText": "Centralized Data Network", "isCorrectAnswer": false },
+      { "answerText": "Cache Delivery Network", "isCorrectAnswer": false },
+      { "answerText": "Content Delivery Network", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "5",
+    "category": "APIs",
+    "question": "What is jQuery UI?",
+    "explanation": "jQuery UI is a curated set of user interface widgets, effects, and themes that extends the functionality of the core jQuery library.",
+    "answers": [
+      { "answerText": "jQuery UI is a framework to create interactive user interfaces.", "isCorrectAnswer": false },
+      {
+        "answerText": "jQuery UI is a design pattern that has to be used when creating interactive UI's with JavaScript.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "jQuery UI is a set of user interface website templates.", "isCorrectAnswer": false },
+      {
+        "answerText": "jQuery UI is a curated set of user interface widgets, effects, and themes that extends the functionality of the core jQuery library.",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "5",
+    "category": "APIs",
+    "question": "Creating an API call using the .ajax() method requires which third-party library?",
+    "explanation": "If we want to create API calls using the .ajax() method, we have to include jQuery in our code.",
+    "answers": [
+      { "answerText": "jQuery", "isCorrectAnswer": true },
+      { "answerText": "fetch", "isCorrectAnswer": false },
+      { "answerText": "Bootstrap", "isCorrectAnswer": false },
+      { "answerText": "cURL", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "5",
+    "category": "JavaScript",
+    "question": "Which HTML element can the submit event be attached to?",
+    "explanation": "You can attach the submit event to the HTML form element.",
+    "answers": [
+      { "answerText": "form", "isCorrectAnswer": true },
+      { "answerText": "button", "isCorrectAnswer": false },
+      { "answerText": "input", "isCorrectAnswer": false },
+      { "answerText": "textarea", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "5",
+    "category": "APIs",
+    "question": "I want to capture when a user clicks on an element. Which jQuery event method should I use?",
+    "explanation": ".on() adds an event handler to an element. When used to listen for click events, the syntax would be .on('click').",
+    "answers": [
+      { "answerText": ".mouseout()", "isCorrectAnswer": false },
+      { "answerText": ".focus()", "isCorrectAnswer": false },
+      { "answerText": ".on()", "isCorrectAnswer": true },
+      { "answerText": ".mouseover()", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "6",
+    "category": "APIs",
+    "question": "Which status code shows a successful response when making a request to an API?",
+    "explanation": "200 indicates a successful response.",
+    "answers": [
+      { "answerText": "200", "isCorrectAnswer": true },
+      { "answerText": "404", "isCorrectAnswer": false },
+      { "answerText": "500", "isCorrectAnswer": false },
+      { "answerText": "401", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "6",
+    "category": "APIs",
+    "question": "Which status code shows a internal server error?",
+    "explanation": "500 indicates an internal server error.",
+    "answers": [
+      { "answerText": "200", "isCorrectAnswer": false },
+      { "answerText": "404", "isCorrectAnswer": false },
+      { "answerText": "500", "isCorrectAnswer": true },
+      { "answerText": "401", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "6",
+    "category": "APIs",
+    "question": "Which status code shows a page was not found?",
+    "explanation": "404 indicates a page was not found.",
+    "answers": [
+      { "answerText": "200", "isCorrectAnswer": false },
+      { "answerText": "404", "isCorrectAnswer": true },
+      { "answerText": "500", "isCorrectAnswer": false },
+      { "answerText": "401", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "6",
+    "category": "APIs",
+    "question": "What is the purpose of the fetch API?",
+    "explanation": "The fetch API uses methods like GET to make network requests that can retrieve data or resources fomr internal or external sources.",
+    "answers": [
+      { "answerText": "To build an API.", "isCorrectAnswer": false },
+      {
+        "answerText": "To make network requests, either internally in an application or to an external source.",
+        "isCorrectAnswer": true
+      },
+      { "answerText": "To turn JSON into JavaScript.", "isCorrectAnswer": false },
+      {
+        "answerText": "To redirect to a 404 Not Found page when the resource is unavailable.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "6",
+    "category": "APIs",
+    "question": "When using AJAX to retreive data, we pass in the GET method and what else as parameters?",
+    "explanation": "We pass in the URL, which specifies which URL we want to request data from.",
+    "answers": [
+      { "answerText": "a URL", "isCorrectAnswer": true },
+      { "answerText": "jQuery", "isCorrectAnswer": false },
+      { "answerText": "fetch", "isCorrectAnswer": false },
+      { "answerText": "JSON", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "9",
+    "category": "JavaScript",
+    "question": "How would we convert the following function to an arrow function? let mood = function(emotion) {}",
+    "explanation": "We remove the function keyword before the parameter ((emotion)) and add the arrow (=>) after the parameter and before the body braces.",
+    "answers": [
+      { "answerText": "let mood => ()emotion) => {}", "isCorrectAnswer": false },
+      { "answerText": "let mood = (emotion) => {}", "isCorrectAnswer": true },
+      { "answerText": "let function mood(emotion) => {}", "isCorrectAnswer": false },
+      { "answerText": "function = mood(emotion) => {}", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "9",
+    "category": "JavaScript",
+    "question": "We need to iterate over data in an array. Which method would we use to do this?",
+    "explanation": "map() will iterate over each index in the array.",
+    "answers": [
+      { "answerText": ".filter()", "isCorrectAnswer": false },
+      { "answerText": ".forEach()", "isCorrectAnswer": false },
+      { "answerText": ".map()", "isCorrectAnswer": true },
+      { "answerText": ".reduce()", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "9",
+    "category": "BackEnd",
+    "question": "What is the purpose of object destructuring?",
+    "explanation": "Destructuring lets us unpack properties from an object and create their own distinct variable.",
+    "answers": [
+      { "answerText": "It lets us transform an object into an array of key/value pairs.", "isCorrectAnswer": false },
+      {
+        "answerText": "It lets us easily map through our object in order to update the update the values.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "It lets us pass an object as a function's argument.", "isCorrectAnswer": false },
+      {
+        "answerText": "It lets us unpack properties from an object and create their own distinct variable.",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "9",
+    "category": "BackEnd",
+    "question": "What is npm short for and what does it do?",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "Node Play Model. It's a Command Line Interface (CLI) that Node.js developers use when dealing with media files inside their applications.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Node Package Maker. It's a tool that allows developers to easily ship their code to businesses that require it.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Node Prototype Module. It's a design philosophy used when creating Node.js applications.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Node Package Manager. It's an open source online repository used to share and borrow packages in Node.js, with its own Command Line Interface (CLI).",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "9",
+    "category": "JavaScript",
+    "question": "How do we convert JSON data to a string?",
+    "explanation": "",
+    "answers": [
+      { "answerText": "JSON.string()", "isCorrectAnswer": false },
+      { "answerText": "JSON.stringify()", "isCorrectAnswer": true },
+      { "answerText": "JSON.toString()", "isCorrectAnswer": false },
+      { "answerText": "JSON.stringing()", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "10",
+    "category": "BackEnd",
+    "question": "What is polymorphism in terms of OOP?",
+    "explanation": "It provides a way to perform a single action in different forms.",
+    "answers": [
+      { "answerText": "It provides a way to perform a single action in different forms.", "isCorrectAnswer": true },
+      { "answerText": "It provides the ability to reuse the code of existing Classes.", "isCorrectAnswer": false },
+      {
+        "answerText": "It describes the idea of bundling data and methods that work on that data within one unit.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "It is the mechanism of hiding data implementation by restricting access to public methods.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "10",
+    "category": "BackEnd",
+    "question": "What is the purpose of writing failing tests in TDD?",
+    "explanation": "To clearly define the expected outcome before writing any code.",
+    "answers": [
+      {
+        "answerText": "To speed up the development process by skipping directly to writing code.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "To ensure that the tests pass without any issues.", "isCorrectAnswer": false },
+      { "answerText": "To satisfy code coverage.", "isCorrectAnswer": false },
+      { "answerText": "To clearly define the expected outcome before writing any code.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "10",
+    "category": "BackEnd",
+    "question": "What are the stages of TDD in the correct order?",
+    "explanation": "First write a test that fails, then pass the test however possible, then refactor the code.",
+    "answers": [
+      { "answerText": "Fail --> Pass --> Refactor", "isCorrectAnswer": true },
+      { "answerText": "Test --> Code --> Pass", "isCorrectAnswer": false },
+      { "answerText": "Code --> Test --> Pass", "isCorrectAnswer": false },
+      { "answerText": "Pass --> Fail --> Refactor", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "10",
+    "category": "BackEnd",
+    "question": "What is Jest?",
+    "explanation": "Jest is a popular JavaScript testing framework.",
+    "answers": [
+      { "answerText": "Jest is a library for managing state in React applications.", "isCorrectAnswer": false },
+      { "answerText": "Jest is a popular JavaScript testing framework.", "isCorrectAnswer": true },
+      { "answerText": "Jest is a front-end framework for building user interfaces.", "isCorrectAnswer": false },
+      { "answerText": "Jest is a build tool for JavaScript applications.", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "10",
+    "category": "BackEnd",
+    "question": "Which of the following is NOT true regarding Jest helpers?",
+    "explanation": "toBeUndefined actually only matches undefined, not null and false.",
+    "answers": [
+      { "answerText": "toBeDefined is the opposite of toBeUndefined.", "isCorrectAnswer": false },
+      { "answerText": "toBeNull only matches null.", "isCorrectAnswer": false },
+      { "answerText": "toBeTruthy matches anything that an if statement treats as true.", "isCorrectAnswer": false },
+      { "answerText": "toBeUndefined matches undefined, null, and false.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "11",
+    "category": "BackEnd",
+    "question": "What is Express.js and what is it used for?",
+    "explanation": "Express.js is a framework that is used in most Node.js back-end web applications. It provides developers with a flexible way to serve static files and create APIs.",
+    "answers": [
+      {
+        "answerText": "Express.js is a back-end application framework for Node.js. It provides a flexible way for developers to create web applications and APIs.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Express.js is an npm package that helps parse JSON and XML encoded form data.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Express.js is an open-source library for adding form functionality to front-end applications.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Express.js is a built-in Node.js framework that allows users to build a simple web server.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "11",
+    "category": "BackEnd",
+    "question": "What is the difference between a route and an endpoint?",
+    "explanation": "A route is actually a URI path that is used to access available endpoints. An endpoint performs one or more actions, can accept parameters, and sends back a response.",
+    "answers": [
+      {
+        "answerText": "An endpoint can only have one HTTP method associated with it, while routes can have many HTTP methods.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "An endpoint is a URI path used to access the available routes. A route performs one or more actions, can accept parameters, and sends back some response.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A route is a URI path used to access available endpoints. An endpoint performs one or more actions, can accept parameters, and sends back a response.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "An endpoint can have multiple routes, while a route can only have one endpoint.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "11",
+    "category": "BackEnd",
+    "question": "Which of the following definitions most accurately describes middleware?",
+    "explanation": "Middleware is a function that can access requests and optionally make changes to the data before passing them along to route handlers.",
+    "answers": [
+      {
+        "answerText": "Middleware is a function that provides access to a specific endpoint.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Middleware is implemented inside route handlers after a request has been received.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Middleware is a function that can access incoming requests before they reach route handlers.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Middleware is a function that accepts requests from a specific route.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "11",
+    "category": "BackEnd",
+    "question": "When creating a custom middleware function, which arguments should it accept?",
+    "explanation": "All middleware functions made using Express.js accept arguments modeled after the request, response, and next lifecycle methods.",
+    "answers": [
+      {
+        "answerText": "The custom middleware function should accept one argument, next, which calls the next middleware in the stack.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "The custom middleware function doesn't have any required arguments.", "isCorrectAnswer": false },
+      {
+        "answerText": "The custom middleware function should accept three arguments: req, res and error.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "The custom middleware function should accept three arguments: req, res, and next.",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "11",
+    "category": "BackEnd",
+    "question": "Which of the following methods of the built-in Node.js fs module is used to write data to the file system?",
+    "explanation": "The fs module's writeFile() method is used to write data to the file system. It accepts a filename or path, the data you want to write, and a callback function. If the specified file name doesn't exist, fs.writeFile() will first create the file and then write the desired data.",
+    "answers": [
+      { "answerText": "fs.writeFile()", "isCorrectAnswer": true },
+      { "answerText": "fs.readFileSync()", "isCorrectAnswer": false },
+      { "answerText": "fs.fstat()", "isCorrectAnswer": false },
+      { "answerText": "fs.readFile()", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "Which command do we use to execute a file in the PostgreSQL Shell? All options are preceded by a back slash.",
+    "explanation": "We use i and then the path to the file to execute files such as schema.sql and seeds.sql.",
+    "answers": [
+      { "answerText": "d", "isCorrectAnswer": false },
+      { "answerText": "l", "isCorrectAnswer": false },
+      { "answerText": "dt", "isCorrectAnswer": false },
+      { "answerText": "i", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "How do we store data in tables?",
+    "explanation": " Tables are made up of columns and rows, where the columns represent a collection of each datatype and a row represents a single data item in that collection.",
+    "answers": [
+      {
+        "answerText": "A table is made up of columns and rows. Both a column and a row represent a single structured data item in a table.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A table is made up of columns and rows. Both columns and rows are collections of a particular datatype.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A table is made up of columns and rows. Columns are a collection of data of a particular datatype, while rows represent a single structured data item in a table. ",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "A table is made up of columns and rows. Rows are a collection of data of a particular datatype while columns represent a single point of data in that row.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "What is the best data type to use for a column that will hold a short string containing 30 characters or less?",
+    "explanation": "VARCHAR(30) is the best choice to designate strings of variable lengths up to 30 characters.",
+    "answers": [
+      { "answerText": "BOOLEAN", "isCorrectAnswer": false },
+      { "answerText": "TEXT", "isCorrectAnswer": false },
+      { "answerText": "CHAR", "isCorrectAnswer": false },
+      { "answerText": "VARCHAR(30)", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "Which of the following statements is NOT true?",
+    "explanation": "To seed our database, we use a seeds file.",
+    "answers": [
+      { "answerText": "A schema is used to create and define a database.", "isCorrectAnswer": false },
+      { "answerText": "A schema is used to seed data.", "isCorrectAnswer": true },
+      {
+        "answerText": "A schema includes one or more tables, which describe how the data will be stored.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "A schema always belong to a single database.", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "Which statement best describes the difference between a primary and foreign key?",
+    "explanation": "A primary key is used to provide a unique identifier to a row in a table, while a foreign key is used to define a relationship between two tables.",
+    "answers": [
+      {
+        "answerText": "Both a primary or foreign key are used to provide a unique identifier for each row of data in a table.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A foreign key in a table uniquely identifies each row in the table while a primary key is used to define relationships between tables.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A primary key provides a unique identifier for a row of data while a foreign key provides a unique identifier to a column of data.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A primary key in a table uniquely identifies each record in the table, while a foreign key is used to define a relationship between tables. ",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "12",
+    "category": "Databases",
+    "question": "Which is the best description of a JOIN?",
+    "explanation": "The JOIN clause is used to combine one or more rows of data from two or more related tables.",
+    "answers": [
+      { "answerText": "A JOIN is used to combine one or more rows from unrelated tables.", "isCorrectAnswer": false },
+      {
+        "answerText": "A JOIN is used to combine one or more tables from related databases.",
+        "isCorrectAnswer": false
+      },
+      { "answerText": "A JOIN is used to combine one or more columns from related tables.", "isCorrectAnswer": false },
+      { "answerText": "A JOIN is used to combine one or more rows from related tables.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "BackEnd",
+    "question": "What is the purpose of the dotenv file (.env)?",
+    "explanation": "It protects sensitive environment variables that should not be accessed by users.",
+    "answers": [
+      {
+        "answerText": "It protects sensitive environment variables that should not be accessed by users.",
+        "isCorrectAnswer": true
+      },
+      { "answerText": "It hides short-term environment variables.", "isCorrectAnswer": false },
+      { "answerText": "It lets the user configure their own environment variables.", "isCorrectAnswer": false },
+      {
+        "answerText": "It configures environment variables so they are easier to find for users and developers.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "Databases",
+    "question": "Which are the three most commonly used data types available to use inside a Sequelize model?",
+    "explanation": "The most commonly used data types in Sequelize are string, boolean, and number.",
+    "answers": [
+      { "answerText": "Route, boolean, and controller.", "isCorrectAnswer": false },
+      { "answerText": "Object, array, and number.", "isCorrectAnswer": false },
+      { "answerText": "String, array, and class.", "isCorrectAnswer": false },
+      { "answerText": "String, boolean, and number.", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "BackEnd",
+    "question": "What does CRUD stand for?",
+    "explanation": "CRUD stands for CREATE, READ, UPDATE, and DELETE. These operations are the four basic functions of persistent storage.",
+    "answers": [
+      { "answerText": "CONSTRUCT, REVISE, UPLOAD, DESTROY", "isCorrectAnswer": false },
+      { "answerText": "CURATE, REUPLOAD, UNINSTALL, DELETE", "isCorrectAnswer": false },
+      { "answerText": "CREATE, REWRITE, UPDATE, DELETE", "isCorrectAnswer": false },
+      { "answerText": "CREATE, READ, UPDATE, DELETE", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "BackEnd",
+    "question": "Which statement below is NOT true about async/await?",
+    "explanation": "async/await does not improve the speed of our applications, but it does clean up our code.",
+    "answers": [
+      { "answerText": "It improves the speed of our applications.", "isCorrectAnswer": true },
+      { "answerText": "It allows for better error handling when paired with try/catch.", "isCorrectAnswer": false },
+      { "answerText": "It increases the readability of code.", "isCorrectAnswer": false },
+      { "answerText": "It eliminates the need for then promise chains.", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "Databases",
+    "question": "Name the four main association types in Sequelize.",
+    "explanation": "The four main associations in Sequelize are HasOne, BelongsTo, HasMany, and BelongsToMany.",
+    "answers": [
+      { "answerText": "HasSingle, BelongsToSingle, HasMultiple, BelongsToMultiple", "isCorrectAnswer": false },
+      { "answerText": "HasOne, BelongsToOne, HasMultiple, BelongsToMultiple", "isCorrectAnswer": false },
+      { "answerText": "HasOne, BelongsTo, HasMany, BelongsToMany", "isCorrectAnswer": false },
+      { "answerText": "HasSingle, BelongsToSingle, HasMany, BelongsToMany", "isCorrectAnswer": true }
+    ]
+  },
+  {
+    "lesson": "13",
+    "category": "Databases",
+    "question": "How would you write the Sequelize .findAll() method as a literal in SQL?",
+    "explanation": "SELECT * FROM database is the raw SQL for the .findAll() method.",
+    "answers": [
+      { "answerText": "SELECT * FROM database", "isCorrectAnswer": true },
+      { "answerText": "SELECT all FROM database", "isCorrectAnswer": false },
+      { "answerText": "SELECT users FROM database", "isCorrectAnswer": false },
+      { "answerText": "SELECT * LOCATION database", "isCorrectAnswer": false }
+    ]
+  },
+  {
+    "lesson": "14",
+    "category": "BackEnd",
+    "question": "Which of the following is an example of conditional access?",
+    "explanation": " If a user is not authorized, they see a screen letting them know that they're unauthorized; if they are authorized, they can view the content they are authorized to view.",
+    "answers": [
+      {
+        "answerText": "If a user is not authorized, they are forbidden from accessing the site again.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "If a user is not authorized, they see a screen letting them know that they're unauthorized; if they are authorized, they can view the content they are authorized to view.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "If a user is authorized once, they don't need to put in their password to log in.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "If a user is authorized, they can view all of the content without any restraints.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "14",
+    "category": "BackEnd",
+    "question": "How do Handlebars.js and other template engines help us preserve the Separation of Concerns principle?",
+    "explanation": "They allow us to create logic-free templates that ensure that the View is isolated from the business logic.",
+    "answers": [
+      {
+        "answerText": "They allow us to create logic-free templates that ensure that the View is isolated from the business logic. ",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "They allow us to write JavaScript in our HTML files in order to DRY up our code.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "They allow us to incorporate our logic into the View so that it is isolated from the Controller.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "They allow the View to communicate directly with the back end in order to isolate the Controller.",
         "isCorrectAnswer": false
       }
     ]
