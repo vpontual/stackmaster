@@ -7,6 +7,52 @@ const Card = ({ question: cardQuestion, onNext, onPrevious }) => {
   const [showExplanation, setShowExplanation] = useState(false);
   const [flip, setFlip] = useState(false);
 
+  const handleAnswerSelected = (event) => {
+    setSelectedAnswer(event.target.value);
+  };
+
+  const handleNext = () => {
+    onNext();
+    setSelectedAnswer('');
+    setFeedback(null);
+    setShowExplanation(false);
+    setFlip(false);
+  };
+
+  const handlePrevious = () => {
+    onPrevious();
+    setSelectedAnswer('');
+    setFeedback(null);
+    setShowExplanation(false);
+    setFlip(false);
+  };
+
+  const handleSubmit = () => {
+    // Check if an answer is selected
+    if (!selectedAnswer) {
+      alert('Please select an answer.');
+      return;
+    }
+
+    // Determine if the selected answer is correct
+    const selectedAnswerObj = answers.find((answer) => answer.answerText === selectedAnswer);
+    if (selectedAnswerObj.isCorrectAnswer) {
+      setFeedback('correct');
+    } else {
+      setFeedback('wrong');
+    }
+
+    // Show the explanation
+    setShowExplanation(true);
+    setFlip(true);
+  };
+
+  const handleCardClick = () => {
+    if (feedback !== null) {
+      setFlip(!flip);
+    }
+  };
+
   return (
     <>
       <div className={`card bg-index text-black text-center ${flip ? 'flip' : ''}`}>
