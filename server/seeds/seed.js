@@ -7,7 +7,9 @@ const cleanDB = require('./cleanDB');
 db.once('open', async () => {
   try {
     await cleanDB('User', 'users');
+    await cleanDB('Question', 'questions');
     await User.create(userSeeds);
+    await Question.create(questionSeeds);
   } catch (err) {
     console.error(err);
     process.exit(1);
@@ -17,12 +19,12 @@ db.once('open', async () => {
   process.exit(0);
 });
 
-db.once('open', async () => {
-  try {
-    await cleanDB('Question', 'questions');
-    await Question.create(questionSeeds);
-  } catch (err) {
-    console.error(err);
-    process.exit(1);
-  }
-});
+// db.once('open', async () => {
+//   try {
+//     await cleanDB('Question', 'questions');
+//     await Question.create(questionSeeds);
+//   } catch (err) {
+//     console.error(err);
+//     process.exit(1);
+//   }
+// });
