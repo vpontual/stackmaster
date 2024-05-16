@@ -9,7 +9,7 @@ const Categories = () => {
     { id: 5, name: 'Databases' },
     { id: 6, name: 'All' },
   ];
-
+  //added div to encapsule link to provide style to each item in array
   return (
     <div className="flex flex-col items-center">
       <h1 className="p-10 text-header">Select a Category</h1>
