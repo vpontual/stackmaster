@@ -1,5 +1,5 @@
 import Navigation from './Nav';
-
+//header page used for all pages except landing page
 const Header = () => {
   // Setting inline styles for the nav links
   const navLinkStyle = {
