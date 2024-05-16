@@ -1,7 +1,8 @@
+import React from 'react';
 import Navigation from './Nav';
+import DonationButton from './DonationButton';
 //header page used for all pages except landing page
 const Header = () => {
-  // Setting inline styles for the nav links
   const navLinkStyle = {
     textDecoration: 'none',
     color: 'inherit',
@@ -9,7 +10,7 @@ const Header = () => {
     padding: '0.5rem 1rem',
     transition: 'background-color 0.3s ease',
   };
-  // Setting inline styles for the active nav link
+
   const activeNavLinkStyle = {
     ...navLinkStyle,
     color: '#f9e2af',
@@ -20,7 +21,8 @@ const Header = () => {
       <a className="no-underline hover:text-current text-header" href="/">
         <h1 className="m-0 text-4xl">StackMaster</h1>
       </a>
-      <div>
+      <div className="flex items-center">
+        <DonationButton />
         <Navigation
           className="text-inherit hover:text-green-800"
           navLinkStyle={navLinkStyle}
