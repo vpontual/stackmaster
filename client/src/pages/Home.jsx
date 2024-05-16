@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useSprings, animated, interpolate } from '@react-spring/web';
 import { useDrag } from 'react-use-gesture';
 import styles from '../styles.module.css';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import card from '../assets/cardVert.jpg';
 
 const cards = [];
@@ -92,8 +92,6 @@ function Deck() {
 
 export default function Home() {
   const navigate = useNavigate();
-  const { name } = useParams();
-  console.log(name);
 
   const handleLogin = () => {
     navigate('/login');

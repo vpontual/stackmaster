@@ -27,7 +27,6 @@ export default function Login() {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState);
     let valid = true;
 
     // validate username field
@@ -53,7 +52,6 @@ export default function Login() {
       const { data } = await login({
         variables: { ...formState },
       });
-      console.log('login data', data);
 
       Auth.login(data.login.token);
     } catch (event) {
@@ -62,8 +60,6 @@ export default function Login() {
 
     // valid form
     if (valid) {
-      console.log('Form submitted:', formState);
-
       // reset form after login
       setFormState({
         username: '',
