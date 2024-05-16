@@ -33,7 +33,6 @@ export default function SignUp() {
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
-    console.log(formState);
     let valid = true;
 
     // validate username field
@@ -79,8 +78,6 @@ export default function SignUp() {
 
     // valid form
     if (valid) {
-      console.log('Form submitted:', formState);
-
       // reset form after submission
       setFormState({
         username: '',

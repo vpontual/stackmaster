@@ -9,7 +9,6 @@ import Card from '../components/Card';
 export default function Study() {
   const { name } = useParams();
   const [questionIndex, setQuestionIndex] = useState(0);
-  console.log(name);
   const { loading, error, data } = useQuery(name === 'All' ? QUERY_QUESTIONS : QUERY_CATEGORY_QUES, {
     variables: { category: name },
   });

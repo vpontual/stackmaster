@@ -18,13 +18,3 @@ db.once('open', async () => {
   console.log('all done!');
   process.exit(0);
 });
-
-// db.once('open', async () => {
-//   try {
-//     await cleanDB('Question', 'questions');
-//     await Question.create(questionSeeds);
-//   } catch (err) {
-//     console.error(err);
-//     process.exit(1);
-//   }
-// });

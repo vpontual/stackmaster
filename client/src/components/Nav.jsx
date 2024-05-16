@@ -21,6 +21,18 @@ const Navigation = ({ navLinkStyle, activeNavLinkStyle }) => {
           color: 'white',
         }}>
         <li className="nav-item" style={{ marginRight: '1rem' }}>
+          <NavLink
+            style={{
+              textDecoration: 'none',
+              color: 'inherit',
+              fontSize: '1.2rem',
+              padding: '0.5rem 1rem',
+            }}>
+            Welcome, {Auth.loggedIn() ? Auth.getProfile().data.username : ''}
+          </NavLink>
+        </li>
+
+        <li className="nav-item" style={{ marginRight: '1rem' }}>
           <NavLink to="/categories" end style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
             Study
           </NavLink>
@@ -31,16 +43,10 @@ const Navigation = ({ navLinkStyle, activeNavLinkStyle }) => {
             Quiz
           </NavLink>
         </li> */}
-        {/* REMOVE COMMENT WHEN PROFILE PAGE IS IMPLEMENTED */}
-        {/* <li className="nav-item" style={{ marginRight: '1rem' }}>
-          <NavLink to="/profile" style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
-            Profile
-          </NavLink>
-        </li> */}
         <li className="nav-item" style={{ marginRight: '1rem' }}>
           {Auth.loggedIn() ? (
             <>
-              <NavLink to="/me" style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
+              <NavLink to="/profile" style={({ isActive }) => (isActive ? activeNavLinkStyle : navLinkStyle)}>
                 Profile
               </NavLink>
               <NavLink
