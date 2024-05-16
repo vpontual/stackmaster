@@ -8,7 +8,7 @@ import auth from './utils/auth.js';
 import Header from './components/Header';
 import Choice from './pages/Choice';
 import Login from './pages/Login.jsx';
-import SignUp from './pages/SignUp.jsx';
+import SignUp from './pages/Signup.jsx';
 import Quiz from './pages/Quiz.jsx';
 import Categories from './pages/Categories';
 import Study from './pages/Study';
