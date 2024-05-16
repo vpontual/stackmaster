@@ -1,3 +1,5 @@
+//page for selecting the categories to be studied
+
 import { Link } from 'react-router-dom';
 
 const Categories = () => {
