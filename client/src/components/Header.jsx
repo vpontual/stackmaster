@@ -1,6 +1,5 @@
 import Navigation from './Nav';
 
-// Setting inline styles for the header element
 const Header = () => {
   // Setting inline styles for the nav links
   const navLinkStyle = {
@@ -15,7 +14,7 @@ const Header = () => {
     ...navLinkStyle,
     color: '#f9e2af',
   };
-  // Return the header element with the h1 element and the Navigation component
+
   return (
     <header className="flex justify-between items-center bg-banner text-header p-4 w-full">
       <a className="no-underline hover:text-current text-header" href="/">
