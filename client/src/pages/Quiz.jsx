@@ -1,3 +1,5 @@
+//page used for taking the quiz
+
 import BugLogo from '../assets/bug';
 
 export default function Quiz() {

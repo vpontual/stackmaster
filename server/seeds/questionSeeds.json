@@ -928,10 +928,10 @@
         "isCorrectAnswer": false
       }
     ]
-  }, 
+  },
   {
     "lesson": "18",
-    "category": "BackEnd",
+    "category": "Databases",
     "question": "Which MongoDB cursor method is best used if we only want to return a maximum of 10 documents?",
     "explanation": "To constrain the maximum number of documents fetched, we use limit() and specify the maximum numeric value we want returned.",
     "answers": [
@@ -955,7 +955,7 @@
   },
   {
     "lesson": "18",
-    "category": "BackEnd",
+    "category": "Databases",
     "question": "Which method are you most likely to use when building a GET Route with Mongoose?",
     "explanation": "The find() method is a great choice when you want to read and return documents from the database using Mongoose.",
     "answers": [
@@ -979,7 +979,7 @@
   },
   {
     "lesson": "18",
-    "category": "BackEnd",
+    "category": "Databases",
     "question": "What is the difference between an instance method and a static method?",
     "explanation": "An instance method is defined on an instance of the model, or document, and only acts on that instance. A static method is defined on the entire model and acts on the entire model. Both instance and static methods provide logic to interact with and manipulate data.",
     "answers": [
@@ -1003,7 +1003,7 @@
   },
   {
     "lesson": "18",
-    "category": "BackEnd",
+    "category": "Databases",
     "question": "Which of the following is NOT true about subdocuments?",
     "explanation": "",
     "answers": [
@@ -1027,7 +1027,7 @@
   },
   {
     "lesson": "18",
-    "category": "BackEnd",
+    "category": "Databases",
     "question": "Which of the following best describes aggregation operations?",
     "explanation": "Aggregate functions allow you to provide summary information about a group of documents, such as sum, average, or maximum.",
     "answers": [
@@ -1171,7 +1171,7 @@
   },
   {
     "lesson": "20",
-    "category": "BackEnd",
+    "category": "React",
     "question": "Which of the following is NOT correct regarding testing React applications?",
     "explanation": "The expect() method matches the assert pattern. The assert pattern is the part of a test where you assert that the expected result was returned.",
     "answers": [
@@ -1195,7 +1195,7 @@
   },
   {
     "lesson": "20",
-    "category": "BackEnd",
+    "category": "React",
     "question": "Which of the following is NOT a benefit of deploying to Netlify?",
     "explanation": "Netlify is for hosting static HTML, CSS, and JavaScript files and optionally running your build script. It doesn't, however, allow you to spin up or manage a back end for your application.",
     "answers": [
@@ -1219,7 +1219,7 @@
   },
   {
     "lesson": "20",
-    "category": "BackEnd",
+    "category": "React",
     "question": "Which of the following statements regarding rendering lists and keys in React is FALSE?",
     "explanation": "",
     "answers": [
@@ -1243,7 +1243,7 @@
   },
   {
     "lesson": "20",
-    "category": "BackEnd",
+    "category": "React",
     "question": "Why is it recommended to handle client-side routing in a React application using the react-router-dom npm package instead of relying on server-side routing?",
     "explanation": "",
     "answers": [
@@ -1392,9 +1392,7 @@
     "explanation": "",
     "answers": [
       {
-        "answerText": 
-          "Authentication: Bearer <token>"
-        ,
+        "answerText": "Authentication: Bearer <token>",
         "isCorrectAnswer": false
       },
       {
@@ -1434,54 +1432,5 @@
         "isCorrectAnswer": true
       }
     ]
-  },
-  {
-    "lesson": "",
-    "category": "BackEnd",
-    "question": "",
-    "explanation": "",
-    "answers": [
-      {
-        "answerText": "",
-        "isCorrectAnswer": true
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      }
-    ]
-  },
-  {
-    "lesson": "",
-    "category": "BackEnd",
-    "question": "",
-    "explanation": "",
-    "answers": [
-      {
-        "answerText": "",
-        "isCorrectAnswer": true
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      },
-      {
-        "answerText": "",
-        "isCorrectAnswer": false
-      }
-    ]
   }
-
 ]
