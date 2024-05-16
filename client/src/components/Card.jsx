@@ -10,6 +10,18 @@ const Card = ({ question: cardQuestion, onNext, onPrevious }) => {
 
   const handleAnswerSelected = (event) => {
     setSelectedAnswer(event.target.value);
+
+    // Determine if the selected answer is correct
+    const selectedAnswerObj = answers.find((answer) => answer.answerText === event.target.value);
+    if (selectedAnswerObj.isCorrectAnswer) {
+      setFeedback('correct');
+    } else {
+      setFeedback('wrong');
+    }
+
+    // Show the explanation and flip the card
+    setShowExplanation(true);
+    setFlip(true);
   };
 
   const handleNext = () => {
@@ -28,26 +40,6 @@ const Card = ({ question: cardQuestion, onNext, onPrevious }) => {
     setFlip(false);
   };
 
-  const handleSubmit = () => {
-    // Check if an answer is selected
-    if (!selectedAnswer) {
-      alert('Please select an answer.');
-      return;
-    }
-
-    // Determine if the selected answer is correct
-    const selectedAnswerObj = answers.find((answer) => answer.answerText === selectedAnswer);
-    if (selectedAnswerObj.isCorrectAnswer) {
-      setFeedback('correct');
-    } else {
-      setFeedback('wrong');
-    }
-
-    // Show the explanation
-    setShowExplanation(true);
-    setFlip(true);
-  };
-
   const handleCardClick = () => {
     if (feedback !== null) {
       setFlip(!flip);
@@ -60,7 +52,7 @@ const Card = ({ question: cardQuestion, onNext, onPrevious }) => {
         <div className="front">
           <h2 className="text-lg">{question}</h2>
           <div className="flashcard-options">
-            <ul className="text-left grid gap-y-10 grid-cols-2">
+            <ul className="text-left grid gap-y-10 gap-x-2 grid-cols-2">
               {answers.map((answer, index) => (
                 <li key={index}>
                   <input
@@ -78,15 +70,12 @@ const Card = ({ question: cardQuestion, onNext, onPrevious }) => {
                       className={`inline-block w-6 h-6 mr-2 border-2 rounded-full border-gray-400 ${
                         selectedAnswer === answer.answerText ? 'bg-header border-gray-500' : 'bg-white'
                       }`}></span>
-                    {String.fromCharCode(65 + index)}. {answer.answerText}
+                    {answer.answerText}
                   </label>
                 </li>
               ))}
             </ul>
           </div>
-          <button className="text-white mt-4" onClick={handleSubmit} disabled={feedback !== null}>
-            Submit
-          </button>
         </div>
         <div className="back">
           {feedback === 'correct' && <p className="text-green-500">Correct!</p>}
