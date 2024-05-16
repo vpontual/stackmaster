@@ -1,7 +1,10 @@
+//page for selecting the categories to be studied
+
 import { Link } from 'react-router-dom';
 
 const Categories = () => {
   const categories = [
+    { id: 0, name: 'HTML CSS' },
     { id: 1, name: 'JavaScript' },
     { id: 2, name: 'Back End' },
     { id: 3, name: 'APIs' },

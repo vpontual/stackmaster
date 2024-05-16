@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from './Nav';
 import DonationButton from './DonationButton';
-
+//header page used for all pages except landing page
 const Header = () => {
   const navLinkStyle = {
     textDecoration: 'none',
