@@ -1098,7 +1098,7 @@
     ]
   },
   {
-    "lesson": "",
+    "lesson": "19",
     "category": "BackEnd",
     "question": "What is a bundle in webpack?",
     "explanation": "A bundle in webpack is the output files that are generated, with all of the modules necessary to run the application.",
@@ -1122,50 +1122,316 @@
     ]
   },
   {
-    "lesson": "",
+    "lesson": "19",
     "category": "BackEnd",
     "question": "What is a loader in webpack?",
-    "explanation": "",
+    "explanation": " Loaders allows webpack to process and transform non-JavaScript files, which can be used as dependencies inside the application.",
     "answers": [
       {
         "answerText": "A pre-generated dependency graph that our website can use as a template.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": " Loaders pre-process and transform non-JavaScript files.",
         "isCorrectAnswer": true
       },
       {
-        "answerText": "",
+        "answerText": "A webpack plugin that makes network requests load quicker.",
         "isCorrectAnswer": false
       },
       {
-        "answerText": "",
-        "isCorrectAnswer": false
-      },
-      {
-        "answerText": "",
+        "answerText": "A webpack-generated file that holds the modules of our website.",
         "isCorrectAnswer": false
       }
     ]
   },
   {
-    "lesson": "",
+    "lesson": "19",
     "category": "BackEnd",
-    "question": "",
+    "question": "Why does Workbox need a bundler like webpack?",
     "explanation": "",
     "answers": [
       {
-        "answerText": "",
+        "answerText": "To reduce loading time.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Service workers are not compatible with JavaScript modules, which is a necessity when it comes to importing Workbox modules.",
         "isCorrectAnswer": true
       },
       {
-        "answerText": "",
+        "answerText": "To improve performance.",
         "isCorrectAnswer": false
       },
       {
-        "answerText": "",
+        "answerText": "To minify the code.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "20",
+    "category": "BackEnd",
+    "question": "Which of the following is NOT correct regarding testing React applications?",
+    "explanation": "The expect() method matches the assert pattern. The assert pattern is the part of a test where you assert that the expected result was returned.",
+    "answers": [
+      {
+        "answerText": "Checking a component's ability to render is a good condition to include in your tests.",
         "isCorrectAnswer": false
       },
       {
-        "answerText": "",
+        "answerText": "The act() method included with Jest is named after the act portion of the act, arrange, assert pattern.",
         "isCorrectAnswer": false
+      },
+      {
+        "answerText": "The expect() method in Jest would fall into the act category for the act, arrange, assert pattern in React testing.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "The arrange portion of the act, arrange, assert pattern involves declaring variables or conditions for the test to execute.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "20",
+    "category": "BackEnd",
+    "question": "Which of the following is NOT a benefit of deploying to Netlify?",
+    "explanation": "Netlify is for hosting static HTML, CSS, and JavaScript files and optionally running your build script. It doesn't, however, allow you to spin up or manage a back end for your application.",
+    "answers": [
+      {
+        "answerText": "Netlify is for serving static HTML, CSS, and JavaScript files directly from your repository.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": " Netlify allows you to host a back end, such as an Express.js server or a MongoDB database.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Netlify can optionally run a build script that is declared in your package.json file when deploying your page.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Netlify can be used to create a personal page or a project page.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "20",
+    "category": "BackEnd",
+    "question": "Which of the following statements regarding rendering lists and keys in React is FALSE?",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "When rendering a list of items using .map(), it is recommended to use the index as the key attribute on each element.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "With React, you can create collections of different elements and render them using the curly brace syntax {}.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "React can determine what has changed or updated through the use of key attributes on each element. Keys should be a stable piece of information that can be added to each element in the array to uniquely identify them. ",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Components will still render if you forget to assign them a key, but it is not good practice.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "20",
+    "category": "BackEnd",
+    "question": "Why is it recommended to handle client-side routing in a React application using the react-router-dom npm package instead of relying on server-side routing?",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "Client-side routing uses if/else conditional logic to handle navigation which improves code readability and writability.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Client-side routing simplifies server configuration by removing the routing modules from the server-side.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Client-side routing enhances the user experience by enabling seamless navigation without page reloads.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Client-side routing improves performance by reducing the load on the client.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "21",
+    "category": "BackEnd",
+    "question": "Which React Router hook can we use to access variable data from the URL, such as the current page's id or username?",
+    "explanation": "We use the useParams() hook to read variable data from the URL and use it to determine what data should be queried and displayed.",
+    "answers": [
+      {
+        "answerText": "The useURL() hook.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "The useParams() hook.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "The useHistory() hook.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "The useLocation() hook.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "21",
+    "category": "BackEnd",
+    "question": "Which of the following is NOT one of the three main parts of the JSON web token?",
+    "explanation": "While we do need the secret, it is not one of the three main parts of the token. The secret is a part of the signature of the token.",
+    "answers": [
+      {
+        "answerText": "Secret",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Payload",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Header",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Signature",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "22",
+    "category": "BackEnd",
+    "question": "Which of the following is NOT a built-in React hook?",
+    "explanation": "React comes with some built-in hooks, such as useState(), useEffect(), useContext(), and useReducer(), but useAnchor() is not a built-in React hook.",
+    "answers": [
+      {
+        "answerText": "useAnchor()",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "useState()",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "useContext()",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "useEffect()",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "22",
+    "category": "BackEnd",
+    "question": "Which one of the following statements regarding React Router is TRUE?",
+    "explanation": "<RouterProvider> maintains the history stack for you by using the HTML5 history API. This allows you to keep your user interface in sync with the URL.",
+    "answers": [
+      {
+        "answerText": "<Link> components can exist without being nested inside a <BrowserRouter> component.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "<Link> components also use href attributes to specify which route to use.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "The react-router-dom package is built-in to React and available for use after running npm create vite@latest.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "<RouterProvider> makes use of the history API built in to most modern web browsers.",
+        "isCorrectAnswer": true
+      }
+    ]
+  },
+  {
+    "lesson": "22",
+    "category": "BackEnd",
+    "question": "Where do we include the functionality for updating the cache when we perform a GraphQL mutation that creates data?",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": "When we invoke the useMutation() hook.",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Apollo Client adds it for us.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "As an argument when we execute the mutation function returned by the useMutation() hook.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "With the GraphQL mutation.",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "22",
+    "category": "BackEnd",
+    "question": "Which of the following is the correct way to add an authentication token to an HTTP header?",
+    "explanation": "",
+    "answers": [
+      {
+        "answerText": 
+          "Authentication: Bearer <token>"
+        ,
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Authorization: Basic <token>",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "Authorization: Bearer <token>",
+        "isCorrectAnswer": true
+      },
+      {
+        "answerText": "Authentication: Basic <token>",
+        "isCorrectAnswer": false
+      }
+    ]
+  },
+  {
+    "lesson": "22",
+    "category": "BackEnd",
+    "question": "Which of the following are returned from the useReducer hook?",
+    "explanation": "The return value of the useReducer hook is an array containing a state object and a dispatch function.",
+    "answers": [
+      {
+        "answerText": "The reducer function.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "A copy of state.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "An array containing the possible actions for a reducer and the reducer function itself.",
+        "isCorrectAnswer": false
+      },
+      {
+        "answerText": "An array containing a state object and a dispatch function.",
+        "isCorrectAnswer": true
       }
     ]
   },
