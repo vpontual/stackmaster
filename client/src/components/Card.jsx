@@ -63,16 +63,20 @@ const Card = ({ question: cardQuestion, onNext, onPrevious }) => {
               {answers.map((answer, index) => (
                 <li key={index}>
                   <input
-                    className="mx-4"
-                    type="radio"
+                    className="mx-4 hidden"
                     id={`answer_${index}`}
-                    name="answers"
-                    value={answer.answerText}
                     checked={selectedAnswer === answer.answerText}
-                    onChange={handleAnswerSelected}
                     disabled={feedback !== null}
+                    name="answers"
+                    onChange={handleAnswerSelected}
+                    type="radio"
+                    value={answer.answerText}
                   />
-                  <label htmlFor={`answer_${index}`}>
+                  <label className="flex items-center cursor-pointer" htmlFor={`answer_${index}`}>
+                    <span
+                      className={`inline-block w-6 h-6 mr-2 border-2 rounded-full border-gray-400 ${
+                        selectedAnswer === answer.answerText ? 'bg-header border-gray-500' : 'bg-white'
+                      }`}></span>
                     {String.fromCharCode(65 + index)}. {answer.answerText}
                   </label>
                 </li>
