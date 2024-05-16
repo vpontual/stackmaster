@@ -19,7 +19,7 @@ db.once('open', async () => {
 
 db.once('open', async () => {
   try {
-    await cleanDB('Question');
+    await cleanDB('Question', 'questions');
     await Question.create(questionSeeds);
   } catch (err) {
     console.error(err);
