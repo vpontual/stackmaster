@@ -7,7 +7,7 @@
   stroke-width="2"
 >
   <!-- Index card body -->
-  <rect x="0" y="0" width="450" height="300" rx="5" ry="5" />
+  <rect x="0" y="0" width="450" height="340" rx="5" ry="5" />
   <!-- Lines -->
   <line x1="0" y1="40" x2="450" y2="40" stroke="red" />
   <line x1="0" y1="60" x2="450" y2="60" stroke="powderblue" />
@@ -22,4 +22,7 @@
   <line x1="0" y1="240" x2="450" y2="240" stroke="powderblue" />
   <line x1="0" y1="260" x2="450" y2="260" stroke="powderblue" />
   <line x1="0" y1="280" x2="450" y2="280" stroke="powderblue" />
+  <line x1="0" y1="300" x2="450" y2="300" stroke="powderblue" />
+  <line x1="0" y1="320" x2="450" y2="320" stroke="powderblue" />
+  <line x1="0" y1="340" x2="450" y2="340" stroke="powderblue" />
 </svg>

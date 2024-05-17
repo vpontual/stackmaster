@@ -1,7 +1,7 @@
 //
 import { useState } from 'react';
 
-const Card = ({ question: cardQuestion, onNext, onPrevious }) => {
+const Card = ({ question: cardQuestion, onNext, onPrevious, disableNext, disablePrevious }) => {
   const { question, answers, explanation } = cardQuestion;
   const [selectedAnswer, setSelectedAnswer] = useState('');
   const [feedback, setFeedback] = useState(null);
@@ -50,7 +50,7 @@ const Card = ({ question: cardQuestion, onNext, onPrevious }) => {
     <>
       <div className={`card bg-index text-black text-center ${flip ? 'flip' : ''}`} onClick={handleCardClick}>
         <div className="front">
-          <h2 className="text-lg">{question}</h2>
+          <h2 className="font-bold text-lg">{question}</h2>
           <div className="flashcard-options">
             <ul className="text-left grid gap-y-10 gap-x-2 grid-cols-2">
               {answers.map((answer, index) => (
@@ -78,16 +78,16 @@ const Card = ({ question: cardQuestion, onNext, onPrevious }) => {
           </div>
         </div>
         <div className="back">
-          {feedback === 'correct' && <p className="text-green-500">Correct!</p>}
-          {feedback === 'wrong' && <p className="text-red-500">Wrong!</p>}
-          {showExplanation && <p>Explanation: {explanation}</p>}
+          {feedback === 'correct' && <p className="font-bold text-3xl text-green-500">Correct!</p>}
+          {feedback === 'wrong' && <p className="font-bold text-3xl text-red-500">Wrong!</p>}
+          {showExplanation && (explanation ? <p className="font-bold">Explanation: {explanation}</p> : null)}
         </div>
       </div>
       <div className="p-4 text-center">
-        <button className="minw-24 mx-2" onClick={handlePrevious}>
+        <button className={`minw-24 mx-2 ${disablePrevious ? 'invisible' : ''}`} onClick={handlePrevious}>
           Previous
         </button>
-        <button className="minw-24 mx-2" onClick={handleNext}>
+        <button className={`minw-24 mx-2 ${disableNext ? 'invisible' : ''}`} onClick={handleNext}>
           Next
         </button>
       </div>
