@@ -13,6 +13,7 @@ import Quiz from './pages/Quiz.jsx';
 import Categories from './pages/Categories';
 import Study from './pages/Study';
 import Footer from './components/Footer';
+import Profile from './pages/Profile';
 
 import './App.css';
 
@@ -63,6 +64,7 @@ function App() {
             <Route path="/study/:name" element={isLoggedIn ? <Study /> : <Navigate to="/login" />} />
             <Route path="/signup" element={isLoggedIn ? <Navigate to="/choice" /> : <SignUp />} />
             <Route path="/choice" element={isLoggedIn ? <Choice /> : <Navigate to="/login" />} />
+            <Route path="/profile" element={isLoggedIn ? <Profile /> : <Navigate to="/login" />} />
           </Routes>
         </main>
         {!isHomePage && <Footer />}
