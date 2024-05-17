@@ -28,7 +28,7 @@ const Navigation = ({ navLinkStyle, activeNavLinkStyle }) => {
               fontSize: '1.2rem',
               padding: '0.5rem 1rem',
             }}>
-            Welcome, {Auth.loggedIn() ? Auth.getProfile().data.username : ''}
+            {Auth.loggedIn() ? `Welcome, ${Auth.getProfile().data.username}` : ''}
           </NavLink>
         </li>
 
