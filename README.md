@@ -6,9 +6,9 @@ We’ve just finished our FullStack Bootcamp! But the life of a developer is nev
 
 - Practice, practice, practice
 
--Build something!
+- Build something!
 
--Be proud of your new portfolio!
+- Be proud of your new portfolio!
 
 
 ## Stack Master is here to help you review the class material and make sure that you have a reference point to come back to during your continuing studies
