@@ -9,23 +9,28 @@ import Card from '../components/Card';
 export default function Study() {
   const { name } = useParams();
   const [questionIndex, setQuestionIndex] = useState(0);
-  console.log(name);
   const { loading, error, data } = useQuery(name === 'All' ? QUERY_QUESTIONS : QUERY_CATEGORY_QUES, {
     variables: { category: name },
   });
-
-  const onNext = () => {
-    setQuestionIndex(questionIndex + 1);
-  };
-
-  const onPrevious = () => {
-    setQuestionIndex(questionIndex - 1);
-  };
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error: {error.message}</p>;
 
   const { questions, questionsCategory } = data;
+  const currentQuestion = name === 'All' ? questions : questionsCategory;
+
+  console.log(currentQuestion.length);
+  const onNext = () => {
+    if (questionIndex < currentQuestion.length - 1) {
+      setQuestionIndex(questionIndex + 1);
+    }
+  };
+
+  const onPrevious = () => {
+    if (questionIndex > 0) {
+      setQuestionIndex(questionIndex - 1);
+    }
+  };
 
   return (
     <>
@@ -36,6 +41,8 @@ export default function Study() {
             question={name === 'All' ? questions[questionIndex] : questionsCategory[questionIndex]}
             onPrevious={onPrevious}
             onNext={onNext}
+            disablePrevious={questionIndex === 0}
+            disableNext={questionIndex === currentQuestion.length - 1}
           />
         </div>
       </div>
